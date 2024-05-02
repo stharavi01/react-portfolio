@@ -4,22 +4,32 @@ import Resume from "../assets/resume.pdf";
 const Navbar = () => {
 	return (
 		<>
-			<header className="w-full py-5 sm:px-10 px-5 flex justify-between items-center">
-				<nav className="flex w-full">
-					<p className="font-semibold">Open for offers & internships -</p>
-
-					<div className="flex flex-1 justify-center max-sm:hidden">
-						<p className="font-bold uppercase cursor-pointer">Ravi Shrestha</p>
+			<header className="w-full py-5 sm:px-10 px-14 flex justify-between items-center bg-black text-darkWhite font-semibold text-sm leading-tight">
+				<div>
+					<p className="uppercase cursor-pointer text-darkWhite text-hover">
+						<span>Ravi</span> <span className="block"> Shrestha</span>
+					</p>
+				</div>
+				<div>
+					<p className=" uppercase w-[12rem] sm:flex text-hover">
+						Front end developer folio / 2023
+					</p>
+				</div>
+				<div className="flex justify-between items-center ">
+					<div className="px-12 w-[16rem]">
+						<p className=" items-center text-hover">
+							Open for offers & internships -
+						</p>
 					</div>
 
-					<div className="flex  gap-7 max-sm:justify-end max-sm:flex-1 cursor-pointer hover:text-slate-500">
+					<div className="flex gap-7 cursor-pointer text-hover">
 						<a href={Resume} download="downloaded-resume.pdf">
-							<button className="px-4 py-2 mt-[-0.4rem] text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 flex items-center gap-1 mr-3">
-								Get in touch! <GoDownload />
+							<button className="px-4 py-2 mt-[-0.4rem] text-sm rounded-full border hover:text-slate-50  flex items-center gap-1 mr-3">
+								Resume <GoDownload />
 							</button>
 						</a>
 					</div>
-				</nav>
+				</div>
 			</header>
 		</>
 	);

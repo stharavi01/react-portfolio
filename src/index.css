@@ -1,6 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	/* custom name */
+	font-family: "OpenSauce-Bold";
+	/* actual name */
+	src: local("OpenSauceOne-Bold"),
+		url("./assets/fonts/OpenSauceOne-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "OpenSauce-Light";
+	src: local("OpenSauceOne-Light"),
+		url("./assets/fonts/OpenSauceOne-Light.ttf") format("truetype");
+}
 
 * {
 	margin: 0;
@@ -19,4 +35,8 @@ body {
 	height: 100%;
 	background: #e1e1e1;
 	border-color: #3b3b3b;
+}
+
+.text-hover {
+	@apply hover:text-lightWhite transition-colors duration-300;
 }
