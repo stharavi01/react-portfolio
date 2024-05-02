@@ -4,18 +4,18 @@ import ProjectsRight from "./ProjectsRight";
 
 const About = () => {
 	return (
-		<section id="about" className="w-full text-darkGray">
+		<section id="projects" className="w-full text-darkGray my-20">
 			{/* Selected Projects */}
 			<div className="my-24">
 				<div className="border-b-2 border-black mx-10 border-opacity-70"></div>
 				<div className="uppercase py-4 font-BebasNeue font-light text-[8rem]">
-					Selected Projects
+					Selected-Projects
 				</div>
 				<div className="border-b-2 border-black mx-10 border-opacity-70"></div>
 			</div>
 
 			{/* Projects */}
-			<div className="px-24">
+			<div className="px-24 py-24">
 				{projectsData.map((project, index) => (
 					<div
 						key={project.title}
