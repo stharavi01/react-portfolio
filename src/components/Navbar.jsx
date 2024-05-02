@@ -12,7 +12,7 @@ const Navbar = () => {
 				</div>
 				<div>
 					<p className=" uppercase w-[12rem] sm:flex text-hover">
-						Front end developer folio / 2023
+						Front end developer folio / 2023 - 2024
 					</p>
 				</div>
 				<div className="flex justify-between items-center ">

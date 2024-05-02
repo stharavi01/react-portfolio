@@ -5,9 +5,11 @@ import { LuGraduationCap } from "react-icons/lu";
 import CosymartImage from "./src/assets/cozymart.png";
 import JobPortalImage from "./src/assets/JobPortal.png";
 import GameImage from "./src/assets/game.png";
+import Bg1 from "./src/assets/bg-1.jpeg";
+import Bg2 from "./src/assets/bg-2.jpeg";
+import Bg3 from "./src/assets/bg-3.jpeg";
+import Bg4 from "./src/assets/bg-4.jpeg";
 import { FaGithub, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
-
-
 
 export const links = [
     {
@@ -91,31 +93,39 @@ export const experiencesData = [
 export const projectsData = [
     {
         title: "CosyMart",
+        number: "01",
         description:
             "I developed a sophisticated furniture e-commerce store. This project boasts an aesthetically pleasing UI, reusable components, robust login validation, and a seamless navigation experience across multiple pages.",
         tags: ["React", "React Router", "Redux Toolkit", "Tailwind CSS", "React Query"],
         imageUrl: CosymartImage,
+        backgroundUrl: Bg1,
     },
     {
         title: "JobPortalImage",
+        number: "02",
         description:
             "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
         tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
         imageUrl: JobPortalImage,
+        backgroundUrl: Bg2,
     },
     {
         title: "Apple Website",
+        number: "03",
         description:
             "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
         tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: GameImage,
+        imageUrl: JobPortalImage,
+        backgroundUrl: Bg3,
     },
     {
         title: "Word Analytics",
+        number: "04",
         description:
             "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
         tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: GameImage,
+        imageUrl: JobPortalImage,
+        backgroundUrl: Bg4,
     },
 ];
 

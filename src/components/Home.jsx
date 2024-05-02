@@ -9,7 +9,7 @@ const Home = () => {
 	return (
 		<>
 			<Navbar />
-			<section className="h-screen w-full relative pt-7 px-10">
+			<section className="h-screen w-full relative pt-7 px-10 bg-black text-darkWhite">
 				<div className="heading-container ">
 					<div className="text-[18.5rem] font-BebasNeue tracking-[-0.4rem]  leading-none flex flex-col">
 						<div>
@@ -41,12 +41,12 @@ const Home = () => {
 							<span className="uppercase font-light items-baseline mr-2">
 								About
 							</span>
-							<span className="text-lg font-semibold text-lightWhite leading-tight">
-								I am a developer passionate about crafting ideas, visuals, and
-								typography into unforgettable digital experiences. With over a
-								year of experience I bring a unique blend of design and
-								development skills to every project. My main focus is React.js
-								and Next.js
+							<span className="text-lg font-semibold text-lightWhite leading-none">
+								I am a developer based in Kathmandu, Nepal passionate about
+								crafting ideas, visuals, and typography into unforgettable
+								digital experiences. With over a year of experience I bring a
+								unique blend of design and development skills to every project.
+								My main focus is React.js and Next.js
 							</span>
 						</div>
 						<div className="mt-8 flex items-center justify-between">
