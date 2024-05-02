@@ -9,7 +9,7 @@ const Home = () => {
 	return (
 		<>
 			<Navbar />
-			<section className="h-screen w-full relative pt-7 px-10  bg-black text-darkWhite ">
+			<section className="h-screen w-full relative pt-7 px-10">
 				<div className="heading-container ">
 					<div className="text-[18.5rem] font-BebasNeue tracking-[-0.4rem]  leading-none flex flex-col">
 						<div>
@@ -36,7 +36,7 @@ const Home = () => {
 						</div>
 					</div>
 
-					<div className="w-[18rem] flex-end absolute right-12 bottom-[6rem] tracking-[-1.3px]">
+					<div className="w-[18rem] flex-end absolute right-6 bottom-[6rem] tracking-[-1.3px]">
 						<div>
 							<span className="uppercase font-light items-baseline mr-2">
 								About

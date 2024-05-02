@@ -18,25 +18,6 @@
 		url("./assets/fonts/OpenSauceOne-Light.ttf") format("truetype");
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html {
-	scroll-behavior: smooth;
-}
-
-body {
-	color: black;
-	width: 100dvw;
-	overflow-x: hidden;
-	height: 100%;
-	background: #e1e1e1;
-	border-color: #3b3b3b;
-}
-
 .text-hover {
 	@apply hover:text-lightWhite transition-colors duration-300;
 }
