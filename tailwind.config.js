@@ -17,10 +17,12 @@ export default {
     },
     extend: {
       fontFamily: {
-        // Custom-name: ["font-family ie actual name" from index.css]
+        // Custom-name: ["actual name (in src prop)" in index.css]
         'OpenSauce-Bold': ['OpenSauce-Bold', 'sans-serif'],
         'OpenSauce-Light': ['OpenSauce-Light', 'sans-serif'],
-        'BebasNeue': ['Bebas Neue', 'sans-serif']
+        'BebasNeue': ['Bebas Neue', 'sans-serif'],
+        'MontrealMedium': ['PP Neue Montreal Medium', 'sans-serif'],
+        'MontrealBold': ['PP Neue Montreal Bold', 'sans-serif'],
       },
 
     },

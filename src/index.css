@@ -18,6 +18,22 @@
 		url("./assets/fonts/OpenSauceOne-Light.ttf") format("truetype");
 }
 
+@font-face {
+	font-family: "MontrealMedium";
+	font-style: normal;
+	font-weight: normal;
+	src: local("PP Neue Montreal Medium"),
+		url("./assets/fonts/ppneuemontreal-medium.woff") format("woff");
+}
+
+@font-face {
+	font-family: "MontrealBold";
+	font-style: normal;
+	font-weight: normal;
+	src: local("PP Neue Montreal Bold"),
+		url("./assets/fonts/ppneuemontreal-bold.woff") format("woff");
+}
+
 .text-hover {
 	@apply hover:text-lightWhite transition-colors duration-300;
 }

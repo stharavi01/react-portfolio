@@ -2,9 +2,9 @@ import { projectsData } from "../../data";
 
 const ProjectsRight = ({ project }) => {
 	return (
-		<div className="col-span-1 rounded-lg bg-softOrange cursor-pointer flex justify-center">
+		<div className="col-span-1 rounded-lg bg-softOrange cursor-pointer flex flex-col items-center ">
 			<div
-				className={`w-[70%] h-[80%] bg-cover bg-center bg-no-repeat flex justify-center items-center`}
+				className={`w-[60%] h-[100%] transform scale-125 bg-cover bg-center bg-no-repeat flex justify-center items-center`}
 				style={{
 					backgroundImage: `url(${project.backgroundUrl})`,
 				}}>
