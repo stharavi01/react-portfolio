@@ -1,10 +1,13 @@
-import Navbar from "./Navbar";
 import Profile from "../assets/profile.jpg";
-import { FaLongArrowAltDown } from "react-icons/fa";
+import { BsArrowDown } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 import { GoDownload } from "react-icons/go";
 import { socials } from "../../data";
 import Resume from "../assets/resume.pdf";
+import { links } from "../../data";
 const Home = () => {
-	return <div>home</div>;
+	return (
+		
+	);
 };
 export default Home;

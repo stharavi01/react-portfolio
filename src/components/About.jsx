@@ -2,11 +2,12 @@ const About = () => {
 	return (
 		<section
 			id="about"
-			className="w-full h-full grid grid-cols-6 gap-20 mt-32 ">
-			<div className="col-span-2 pl-6">
+			className="w-full h-screen grid grid-cols-6 gap-20 mt-36 ">
+			<div className="col-span-2 pl-6  ">
 				<p className="text-7xl ml-16 uppercase">About</p>
 			</div>
-			<div className="col-span-4 h-full mr-20 text-wrap ">
+
+			<div className="col-span-4 h-full text-wrap mr-20">
 				<p className="mb-4">
 					I'm a multi-disciplinary designer and Webflow developer, passionate
 					about crafting ideas, visuals, and typography into unforgettable
