@@ -6,12 +6,23 @@ const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className="h-screen w-full relative pt-7 px-16 text-darkGray mt-24">
-			{/* Heading */}
+			className=" w-full relative pb-6 px-16 text-darkGray mt-24">
 			<div className="heading-container ">
-				<p className="text-center text-lg mb-[-10px] font-bold text-darkGray leading-none">
-					Got work or an offer?
-				</p>
+				{/* mail */}
+				<div>
+					<p className="text-center text-sm my-[4px] font-OpenSauce-Light tracking-tighter font-bold text-darkGray ">
+						Have an offer? Drop me an email :
+					</p>
+					<a
+						href="mailto:shrestharavi06@gmail.com"
+						className="cursor-pointer hover:text-red-400 relative z-30 text-center">
+						<p className="text-center text-2xl mb-[-8px] font-OverusedGrotesk-Bold tracking-tight font-bold text-darkGray ">
+							shrestharavi06@gmail.com
+						</p>
+					</a>
+				</div>
+
+				{/* contact */}
 				<div className="text-[13rem] font-OverusedGrotesk-Bold text-lightBlack opacity-85 tracking-[-0.4rem] leading-none flex flex-col text-center uppercase ">
 					<div>
 						<span>Get</span>
@@ -73,7 +84,7 @@ const Contact = () => {
 				</div>
 
 				{/* Bottom Left grid*/}
-				<div className="text-[4.2rem] font-OverusedGrotesk-Bold text-lightBlack opacity-80 leading-none tracking-tight flex flex-col text-left uppercase ">
+				<div className="text-[4.2rem] font-OverusedGrotesk-Bold text-lightBlack opacity-80 leading-none tracking-tighter flex flex-col text-left uppercase ">
 					<p> &copy; {new Date().getFullYear()}</p>
 					<p>Ravi Shrestha</p>
 				</div>
@@ -85,9 +96,9 @@ const Contact = () => {
 						<LocalTime />
 					</div>
 					<div className="mx-auto flex relative">
-						<div className="bg-lightWhite rounded-full w-[5.5rem] h-[5.5rem] absolute flex justify-center items-center hover:bg-darkWhite transform hover:scale-105 transition-all">
+						<div className="bg-lightWhite rounded-full w-[5.5rem] h-[5.5rem] absolute top-2 flex justify-center items-center hover:bg-darkWhite transform hover:scale-105 transition-all cursor-pointer">
 							<a href="#about">
-								<IoIosArrowRoundUp size={50} />
+								<IoIosArrowRoundUp size={50} className="text-black" />
 							</a>
 						</div>
 					</div>

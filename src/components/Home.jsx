@@ -1,9 +1,5 @@
 import { BsArrowDown } from "react-icons/bs";
-import { BsArrowUpRight } from "react-icons/bs";
 import { GoDownload } from "react-icons/go";
-import { socials } from "../../data";
-import Resume from "../assets/resume.pdf";
-import { links } from "../../data";
 import Navbar from "./Navbar";
 const Home = () => {
 	return (
@@ -51,10 +47,12 @@ const Home = () => {
 								My main focus is React.js and Next.js
 							</span>
 						</div>
-						<div className="mt-8 flex items-center justify-between">
-							<p className="font-bold text-lg"> Scroll Down</p>
-							<GoDownload />
-						</div>
+						<a href="#experience">
+							<div className="mt-8 flex items-center justify-between text-hover">
+								<p className="font-bold text-lg"> Scroll Down</p>
+								<GoDownload size={20} className="text-hover" />
+							</div>
+						</a>
 					</div>
 				</div>
 			</section>
