@@ -15,7 +15,7 @@ const About = () => {
 			</div>
 
 			{/* Projects */}
-			<div className="px-20 py-24">
+			<div className="px-20 ">
 				{projectsData.map((project, index) => (
 					<div
 						key={project.title}

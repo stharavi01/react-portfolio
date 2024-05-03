@@ -13,7 +13,6 @@ export default {
       gray: '#e1e1e1',
       darkGray: '#505050',
       white: '#FFFFFF',
-      softOrange: '##03AED2',
     },
     extend: {
       fontFamily: {
@@ -23,6 +22,9 @@ export default {
         'BebasNeue': ['Bebas Neue', 'sans-serif'],
         'MontrealMedium': ['PP Neue Montreal Medium', 'sans-serif'],
         'MontrealBold': ['PP Neue Montreal Bold', 'sans-serif'],
+        'OverusedGrotesk-Bold': ['OverusedGrotesk-Bold', 'sans-serif'],
+        'OverusedGrotesk-ExtraBold': ['OverusedGrotesk-ExtraBold', 'sans-serif'],
+        'OverusedGrotesk-Light': ['OverusedGrotesk-Light', 'sans-serif'],
       },
 
     },

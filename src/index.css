@@ -33,6 +33,27 @@
 	src: local("PP Neue Montreal Bold"),
 		url("./assets/fonts/ppneuemontreal-bold.woff") format("woff");
 }
+/* Grotesque */
+@font-face {
+	font-family: "OverusedGrotesk-Bold";
+	font-style: OverusedGrotesk-Bold;
+	src: local("OverusedGrotesk-Bold"),
+		url("./assets/fonts/OverusedGrotesk-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "OverusedGrotesk-Light";
+	font-style: OverusedGrotesk-Light;
+	src: local("OverusedGrotesk-Light"),
+		url("./assets/fonts/OverusedGrotesk-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "OverusedGrotesk-ExtraBold";
+	font-style: OverusedGrotesk-ExtraBold;
+	src: local("OverusedGrotesk-ExtraBold"),
+		url("./assets/fonts/OverusedGrotesk-ExtraBold.ttf") format("truetype");
+}
 
 .text-hover {
 	@apply hover:text-lightWhite transition-colors duration-300;

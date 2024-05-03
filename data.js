@@ -42,22 +42,22 @@ export const links = [
 
 export const socials = [
     {
-        name: "github",
+        name: "Github",
         icon: React.createElement(FaGithub),
         link: "https://github.com/stharavi01"
     },
     {
-        name: "linkedIn",
+        name: "LinkedIn",
         icon: React.createElement(FaLinkedinIn),
         link: "https://www.linkedin.com/in/rabin-shrestha-077000245/"
     },
     {
-        name: "instagram",
+        name: "Instagram",
         icon: React.createElement(FaInstagram),
         link: "https://www.instagram.com/stha_ravi01/"
     },
     {
-        name: "youtube",
+        name: "Youtube",
         icon: React.createElement(FaYoutube),
         link: "https://www.youtube.com/channel/UCKdhV0dNYBOPSWn3vAzDeSg"
     },
