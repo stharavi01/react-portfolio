@@ -9,7 +9,7 @@ const Contact = () => {
 			className="h-screen w-full relative pt-7 px-16 text-darkGray mt-24">
 			{/* Heading */}
 			<div className="heading-container ">
-				<p className="text-center text-lg font-bold text-darkGray leading-none">
+				<p className="text-center text-lg mb-[-10px] font-bold text-darkGray leading-none">
 					Got work or an offer?
 				</p>
 				<div className="text-[13rem] font-OverusedGrotesk-Bold text-lightBlack opacity-85 tracking-[-0.4rem] leading-none flex flex-col text-center uppercase ">
@@ -23,7 +23,7 @@ const Contact = () => {
 			</div>
 
 			{/* Grid container */}
-			<div className="grid-container grid grid-cols-[40%_60%] gap-12 pt-16 mt-6  ">
+			<div className="grid-container grid grid-cols-[45%_55%] gap-12 pt-16 mt-6  ">
 				{/* Left grid */}
 				<div className="">
 					<p className="border-b border-black uppercase text-bold text-lg font-OpenSauce-Bold tracking-tight">

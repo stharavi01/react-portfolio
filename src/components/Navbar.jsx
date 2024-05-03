@@ -1,10 +1,17 @@
 import { GoDownload } from "react-icons/go";
 import Resume from "../assets/resume.pdf";
+import { TbEqual } from "react-icons/tb";
 
 const Navbar = () => {
 	return (
 		<>
 			<header className="w-full py-5 sm:px-10 px-14 flex justify-between items-center bg-black text-darkWhite font-semibold text-sm leading-tight">
+				{/* navigation icon */}
+				<div className="bg-gray rounded-full w-[4.3rem] h-[4.3rem] absolute top-8 z-10 flex justify-center items-center">
+					<TbEqual size={50} className="text-lightBlack" />
+				</div>
+
+				{/* Navbar */}
 				<div>
 					<p className="uppercase cursor-pointer text-darkWhite text-hover">
 						<span>Ravi</span> <span className="block"> Shrestha</span>
