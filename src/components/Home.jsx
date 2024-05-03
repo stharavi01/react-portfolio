@@ -9,7 +9,9 @@ const Home = () => {
 	return (
 		<>
 			<Navbar />
-			<section className="h-screen w-full relative pt-7 px-10 bg-black text-darkWhite">
+			<section
+				id="about"
+				className="h-screen w-full relative pt-7 px-10 bg-black text-darkWhite">
 				<div className="heading-container ">
 					<div className="text-[18.5rem] font-BebasNeue tracking-[-0.4rem]  leading-none flex flex-col">
 						<div>

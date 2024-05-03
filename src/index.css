@@ -58,3 +58,7 @@
 .text-hover {
 	@apply hover:text-lightWhite transition-colors duration-300;
 }
+
+html {
+	scroll-behavior: smooth;
+}

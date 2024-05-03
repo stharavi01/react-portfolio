@@ -1,9 +1,12 @@
 import { links, socials } from "../../data";
 import LocalTime from "../utility/LocalTime";
+import { IoIosArrowRoundUp } from "react-icons/io";
 
 const Contact = () => {
 	return (
-		<section className="h-screen w-full relative pt-7 px-16 text-darkGray mt-24">
+		<section
+			id="contact"
+			className="h-screen w-full relative pt-7 px-16 text-darkGray mt-24">
 			{/* Heading */}
 			<div className="heading-container ">
 				<p className="text-center text-lg font-bold text-darkGray leading-none">
@@ -28,7 +31,7 @@ const Contact = () => {
 					</p>
 					<div className="flex flex-col mt-2 font-bold font-MontrealMedium text-darkWhite">
 						{links.map((link) => (
-							<a href={link.hash} className="my-[4px]" target="_blank">
+							<a href={link.hash} className="my-[4px]">
 								{link.name}
 							</a>
 						))}
@@ -57,25 +60,37 @@ const Contact = () => {
 							<a
 								href="https://github.com/stharavi01/react-portfolio.git"
 								target="_blank">
-								Source Code
+								Portfolio V2 Source Code
 							</a>
 							<a
 								href="https://stharaviportfolio.netlify.app"
 								className="my-[4px]"
 								target="_blank">
-								Portfolio V1
+								Portfolio V1.6
 							</a>
 						</div>
 					</div>
 				</div>
-				{/* Branding */}
-				<div className="text-[4.2rem] font-OverusedGrotesk-Bold text-lightBlack opacity-85 leading-none tracking-tight flex flex-col text-left uppercase ">
+
+				{/* Bottom Left grid*/}
+				<div className="text-[4.2rem] font-OverusedGrotesk-Bold text-lightBlack opacity-80 leading-none tracking-tight flex flex-col text-left uppercase ">
 					<p> &copy; {new Date().getFullYear()}</p>
 					<p>Ravi Shrestha</p>
 				</div>
-				<div className="text-base font-bold text-lightBlack opacity-85 leading-none tracking-normal flex flex-col text-left uppercase">
-					<p className="mb-2">Local Time</p>
-					<LocalTime />
+
+				{/* Bottom Right grid*/}
+				<div className="text-base font-bold text-lightBlack opacity-85 leading-none tracking-normal  text-left uppercase grid grid-cols-2">
+					<div className="flex flex-col">
+						<p className="mb-2">Local Time</p>
+						<LocalTime />
+					</div>
+					<div className="mx-auto flex relative">
+						<div className="bg-lightWhite rounded-full w-[5.5rem] h-[5.5rem] absolute flex justify-center items-center hover:bg-darkWhite transform hover:scale-105 transition-all">
+							<a href="#about">
+								<IoIosArrowRoundUp size={50} />
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
