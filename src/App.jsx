@@ -1,7 +1,7 @@
 import Experience from "./components/Experience";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
-import Skill from "./components/Skill";
+import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 const App = () => {
 	return (
@@ -9,8 +9,8 @@ const App = () => {
 			<Home />
 			<Projects />
 			<Experience />
-			{/* <Skill />
-			<Contact /> */}
+			<Skills />
+			<Contact />
 		</div>
 	);
 };

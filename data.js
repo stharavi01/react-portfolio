@@ -65,29 +65,24 @@ export const socials = [
 
 export const experiencesData = [
     {
-        title: "Graduated bootcamp",
-        location: "Miami, FL",
+        title: "Pursuing BSc. CSIT",
+        location: "Gongabu, Kathmandu",
         description:
-            "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+            "Pursuing my bachelors degree in computer science and information technology (BSc. CSIT) at Asian School of Management & Technology.",
         icon: React.createElement(LuGraduationCap),
-        date: "2019",
+        date: "Sep 2019 - Present",
+        type: "study"
     },
     {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
+        title: "ReactJs Intern ( Corpola Tech )",
+        location: "Sankhamul, Kathmandu",
         description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+            "Worked as a ReactJs intern where I worked in the development of a cutting-edge educational platform using diverse arrays of technologies like React, Javascript, CSS, Semantic UI and more.",
         icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
+        date: "Jan 2024 - April 2024",
+        type: "work"
     },
-    {
-        title: "Full-Stack Developer",
-        location: "Houston, TX",
-        description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-        icon: React.createElement(FaReact),
-        date: "2021 - present",
-    },
+
 ];
 
 export const projectsData = [
@@ -96,7 +91,7 @@ export const projectsData = [
         number: "01",
         description:
             "I developed a sophisticated furniture e-commerce store. This project boasts an aesthetically pleasing UI, reusable components, robust login validation, and a seamless navigation experience across multiple pages.",
-        tags: ["React", "React Router", "Redux Toolkit", "Tailwind CSS", "React Query"],
+        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
         imageUrl: CosymartImage,
         backgroundUrl: Bg1,
     },

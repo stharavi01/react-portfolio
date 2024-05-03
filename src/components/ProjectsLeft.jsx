@@ -10,7 +10,14 @@ const ProjectsLeft = ({ project }) => {
 			<p className="text-4xl my-6 uppercase font-semibold">{project.title}</p>
 			<div className="w-[80%]">
 				<p className="my-2 mb-8"> {project.description}</p>
-				<p>{`${project.tags}`}</p>
+
+				<div className="flex gap-2 flex-wrap: wrap w-[80%]">
+					{project.tags.map((tag) => (
+						<button className="px-3 py-[2px] mt-[-0.4rem] text-sm rounded-full border hover:text-slate-50 uppercase ">
+							{tag}
+						</button>
+					))}
+				</div>
 			</div>
 		</div>
 	);
