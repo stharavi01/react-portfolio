@@ -1,6 +1,6 @@
 import { BsArrowDown } from "react-icons/bs";
-import { GoDownload } from "react-icons/go";
 import Navbar from "./Navbar";
+import LocalTime from "../utility/LocalTime";
 const Home = () => {
 	return (
 		<>
@@ -48,9 +48,9 @@ const Home = () => {
 							</span>
 						</div>
 						<a href="#experience">
-							<div className="mt-8 flex items-center justify-between text-hover">
-								<p className="font-bold text-lg"> Scroll Down</p>
-								<GoDownload size={20} className="text-hover" />
+							<div className="mt-8 flex items-center justify-between ">
+								<LocalTime />
+								<BsArrowDown size={20} className="text-hover mt-4" />
 							</div>
 						</a>
 					</div>

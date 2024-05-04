@@ -91,10 +91,7 @@ const Contact = () => {
 
 				{/* Bottom Right grid*/}
 				<div className="text-base font-bold text-lightBlack opacity-85 leading-none tracking-normal  text-left uppercase grid grid-cols-2">
-					<div className="flex flex-col ">
-						<p className="mb-2">Local Time</p>
-						<LocalTime />
-					</div>
+					<LocalTime />
 					<div className="mx-auto flex relative">
 						<div className="bg-darkWhite rounded-full w-[4.5rem] h-[4.5rem] flex justify-center items-center hover:bg-darkGray transform hover:scale-105 transition-all cursor-pointer">
 							<a href="#about">
