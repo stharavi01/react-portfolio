@@ -4,9 +4,9 @@ import ProjectsRight from "./ProjectsRight";
 
 const About = () => {
 	return (
-		<section id="projects" className="w-full text-darkGray my-[10rem]">
+		<section id="projects" className="w-full text-darkGray my-[8rem]">
 			{/* Heading */}
-			<div className="mb-[12rem]">
+			<div className="mb-[11rem]">
 				<div className="black-underline"></div>
 				<p className="my-heading-black ml-12">Selected Projects</p>
 				<div className="black-underline"></div>

@@ -96,7 +96,7 @@ const Contact = () => {
 						<LocalTime />
 					</div>
 					<div className="mx-auto flex relative">
-						<div className="bg-lightWhite rounded-full w-[5.5rem] h-[5.5rem] absolute top-2 flex justify-center items-center hover:bg-darkWhite transform hover:scale-105 transition-all cursor-pointer">
+						<div className="bg-darkWhite rounded-full w-[4.5rem] h-[4.5rem] flex justify-center items-center hover:bg-darkGray transform hover:scale-105 transition-all cursor-pointer">
 							<a href="#about">
 								<IoIosArrowRoundUp size={50} className="text-black" />
 							</a>
