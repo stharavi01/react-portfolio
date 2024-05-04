@@ -4,7 +4,9 @@ import ProjectsRight from "./ProjectsRight";
 
 const About = () => {
 	return (
-		<section id="projects" className="w-full text-darkGray my-[8rem]">
+		<section
+			id="projects"
+			className="w-full text-darkGray my-[2rem] md:my-[8rem]">
 			{/* Heading */}
 			<div className="mb-[11rem]">
 				<div className="black-underline"></div>
@@ -17,7 +19,7 @@ const About = () => {
 				{projectsData.map((project, index) => (
 					<div
 						key={project.title}
-						className={`grid grid-cols-2 my-24 ${
+						className={`grid grid-cols-1 md:grid-cols-2 my-24 ${
 							index % 2 === 0 ? "pl-[4rem]" : "pr-[4rem]"
 						}`}>
 						{index % 2 === 0 ? (

@@ -7,23 +7,21 @@ const Home = () => {
 			<Navbar />
 			<section
 				id="about"
-				className="h-screen w-full relative px-5 md:px-10 bg-black text-darkWhite">
+				className="h-screen w-full relative lg:pt-7 px-10 bg-black text-darkWhite">
 				<div className="heading-container ">
-					<div className="text-[9rem] py-8 md:py-7 md:text-[18.5rem] font-BebasNeue lg:tracking-[-0.4rem] sm:tracking-normal leading-none flex flex-col">
+					<div className="lg:text-[18.5rem] sm:text-[10rem] font-BebasNeue lg:tracking-[-0.4rem] sm:tracking-normal leading-none flex flex-col">
 						<div>
 							<span className="text-hover">F</span>
 							<span className="text-hover">R</span>
 							<span className="text-hover">O</span>
 							<span className="text-hover">N</span>
 							<span className="text-hover">T</span>
-							<div className="block lg:inline-block ">
-								<span className="text-hover">-</span>
-								<span className="text-hover">E</span>
-								<span className="text-hover">N</span>
-								<span className="text-hover">D</span>
-							</div>
+							<span className="text-hover">-</span>
+							<span className="text-hover">E</span>
+							<span className="text-hover">N</span>
+							<span className="text-hover">D</span>
 						</div>
-						<div className=" flex flex-row flex-wrap md:flex-row sm:flex-col md:mt-[-2rem] ">
+						<div className="mt-[-2rem]">
 							<span className="text-hover">D</span>
 							<span className="text-hover">E</span>
 							<span className="text-hover">V</span>
@@ -37,9 +35,9 @@ const Home = () => {
 					</div>
 
 					{/* About section */}
-					<div className="w-3/4 lg:w-[18rem] flex-end lg:absolute right-6 bottom-[6rem] tracking-[-1.3px]">
+					<div className="w-[18rem] flex-end lg:absolute right-6 bottom-[6rem] tracking-[-1.3px]">
 						{/* about content */}
-						<div className="">
+						<div>
 							<span className="uppercase font-light items-baseline mr-2">
 								About
 							</span>

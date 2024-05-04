@@ -23,18 +23,14 @@ const Contact = () => {
 				</div>
 
 				{/* contact */}
-				<div className="text-[13rem] font-OverusedGrotesk-Bold text-lightBlack opacity-85 tracking-[-0.4rem] leading-none flex flex-col text-center uppercase ">
-					<div>
-						<span>Get</span>
-						<span className="mx-10">In</span>
-						<span>Touch</span>
-					</div>
+				<div className="text-[3rem] md:text-[7rem] lg:text-[13rem] font-OverusedGrotesk-Bold text-lightBlack opacity-85 tracking-[-0.4rem] leading-none flex flex-col text-center uppercase">
+					<p>Get in touch</p>
 				</div>
-				<div className="border-b-8 border-black mx-6 border-opacity-70"></div>
+				<div className="black-underline "></div>
 			</div>
 
 			{/* Grid container */}
-			<div className="grid-container grid grid-cols-[45%_55%] gap-12 pt-16 mt-6  ">
+			<div className="grid-container grid grid-cols-[1fr 1fr] lg:grid-cols-[50%_25%_1fr] gap-12 pt-16 mt-6  ">
 				{/* Left grid */}
 				<div className="">
 					<p className="border-b border-black uppercase text-bold text-lg font-OpenSauce-Bold tracking-tight">
@@ -49,37 +45,37 @@ const Contact = () => {
 					</div>
 				</div>
 
-				{/* Right Grid */}
-				<div className="grid grid-cols-2 gap-12">
-					<div>
-						<p className="border-b border-black uppercase text-bold text-lg font-OpenSauce-Bold tracking-tight">
-							Socials
-						</p>
-						<div className="flex flex-col mt-2 font-bold font-MontrealMedium text-darkWhite">
-							{socials.map((social) => (
-								<a href={social.link} className="my-[4px]" target="_blank">
-									{social.name}
-								</a>
-							))}
-						</div>
+				{/* Center Grid */}
+				<div>
+					<p className="border-b border-black uppercase text-bold text-lg font-OpenSauce-Bold tracking-tight">
+						Socials
+					</p>
+					<div className="flex flex-col mt-2 font-bold font-MontrealMedium text-darkWhite">
+						{socials.map((social) => (
+							<a href={social.link} className="my-[4px]" target="_blank">
+								{social.name}
+							</a>
+						))}
 					</div>
-					<div>
-						<p className="border-b border-black uppercase text-bold text-lg tracking-tight font-OpenSauce-Bold">
-							Resources
-						</p>
-						<div className="flex flex-col mt-2 font-bold font-MontrealMedium text-darkWhite">
-							<a
-								href="https://github.com/stharavi01/react-portfolio.git"
-								target="_blank">
-								Portfolio V2 Source Code
-							</a>
-							<a
-								href="https://stharaviportfolio.netlify.app"
-								className="my-[4px]"
-								target="_blank">
-								Portfolio V1.6
-							</a>
-						</div>
+				</div>
+
+				{/* Right column */}
+				<div>
+					<p className="border-b border-black uppercase text-bold text-lg tracking-tight font-OpenSauce-Bold">
+						Resources
+					</p>
+					<div className="flex flex-col mt-2 font-bold font-MontrealMedium text-darkWhite">
+						<a
+							href="https://github.com/stharavi01/react-portfolio.git"
+							target="_blank">
+							Portfolio V2 Source Code
+						</a>
+						<a
+							href="https://stharaviportfolio.netlify.app"
+							className="my-[4px]"
+							target="_blank">
+							Portfolio V1.6
+						</a>
 					</div>
 				</div>
 
@@ -89,15 +85,17 @@ const Contact = () => {
 					<p>Ravi Shrestha</p>
 				</div>
 
-				{/* Bottom Right grid*/}
+				{/* Bottom Center grid*/}
 				<div className="text-base font-bold text-lightBlack opacity-85 leading-none tracking-normal  text-left uppercase grid grid-cols-2">
 					<LocalTime />
-					<div className="mx-auto flex relative">
-						<div className="bg-darkWhite rounded-full w-[4.5rem] h-[4.5rem] flex justify-center items-center hover:bg-darkGray transform hover:scale-105 transition-all cursor-pointer">
-							<a href="#about">
-								<IoIosArrowRoundUp size={50} className="text-black" />
-							</a>
-						</div>
+				</div>
+
+				{/* Bottom right grid */}
+				<div className="mx-auto flex relative">
+					<div className="bg-darkWhite rounded-full w-[4.5rem] h-[4.5rem] flex justify-center items-center hover:bg-darkGray transform hover:scale-105 transition-all cursor-pointer">
+						<a href="#about">
+							<IoIosArrowRoundUp size={50} className="text-black" />
+						</a>
 					</div>
 				</div>
 			</div>

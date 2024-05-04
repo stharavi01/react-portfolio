@@ -5,37 +5,35 @@ import { TbEqual } from "react-icons/tb";
 const Navbar = () => {
 	return (
 		<>
-			<header className="w-full py-5 sm:px-10 px-14 flex justify-between items-center bg-black text-darkWhite font-semibold text-sm leading-tight">
+			<header className="font-semibold md:text-sm leading-tight text-darkWhite bg-black w-full grid grid-cols-[20%_1fr] lg:grid-cols-2 gap-20 md:gap-50 px-10 lg:px-14 py-5 sm:px-10">
 				{/* navigation icon */}
 				<div className="bg-gray rounded-full w-[4.3rem] h-[4.3rem] absolute top-8 z-10 flex justify-center items-center opacity-0">
 					<TbEqual size={50} className="text-lightBlack" />
 				</div>
 
-				{/* Navbar */}
+				{/* Left column */}
+
 				<div>
-					<p className="uppercase cursor-pointer text-darkWhite text-hover sm:hidden">
+					<p className="uppercase cursor-pointer text-darkWhite text-hover ">
 						<span>Ravi</span> <span className="block"> Shrestha</span>
 					</p>
 				</div>
-				<div>
-					<p className=" uppercase w-[12rem] sm:flex text-hover">
+
+				{/* Right column */}
+				<div className="flex flex-col md:flex-row gap-y-4 justify-between">
+					<p className=" uppercase sm:flex text-hover md:w-[30%]">
 						Front end developer folio / 2023 - 2024
 					</p>
-				</div>
-				<div className="flex justify-between items-center ">
-					<div className="px-12 w-[16rem]">
-						<p className=" items-center text-hover">
-							Open for offers & internships -
-						</p>
-					</div>
 
-					<div className="flex gap-7 cursor-pointer text-hover">
-						<a href={Resume} download="downloaded-resume.pdf">
-							<button className="px-4 py-2 mt-[-0.4rem] text-sm rounded-full border hover:text-slate-50  flex items-center gap-1 mr-3">
-								Resume <GoDownload />
-							</button>
-						</a>
-					</div>
+					<p className=" items-center text-hover text-wrap md:w-1/4">
+						Open for offers & internships -
+					</p>
+
+					<a href={Resume} download="downloaded-resume.pdf">
+						<button className="px-4 py-2 lg:mt-[-0.4rem] text-sm rounded-full border hover:text-slate-50 flex items-center gap-1 cursor-pointer text-hover">
+							Resume <GoDownload />
+						</button>
+					</a>
 				</div>
 			</header>
 		</>

@@ -11,11 +11,11 @@ const ProjectsLeft = ({ project }) => {
 			<div className="w-[80%]">
 				<p className="my-2 mb-8"> {project.description}</p>
 
-				<div className="flex gap-2 flex-wrap: wrap w-[80%]">
+				<div className="flex flex-wrap gap-2 sm:gap-1 w-full sm:w-[80%]">
 					{project.tags.map((tag, index) => (
 						<button
 							key={index}
-							className="px-3 py-[2px] mt-[-0.4rem] text-sm rounded-full border hover:text-slate-50 uppercase ">
+							className="px-3 py-1 sm:px-2 sm:py-1 text-sm sm:text-xs rounded-full border hover:text-slate-50 uppercase">
 							{tag}
 						</button>
 					))}

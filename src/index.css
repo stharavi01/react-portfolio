@@ -55,8 +55,28 @@
 		url("./assets/fonts/OverusedGrotesk-ExtraBold.ttf") format("truetype");
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* color: white; */
+	width: 100dvw;
+	overflow-x: hidden;
+	height: 100%;
+	/* background: #000; */
+	border-color: #3b3b3b;
+	user-select: none;
+}
+
 html {
 	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hiden;
 }
 
 .text-hover {
@@ -64,17 +84,17 @@ html {
 }
 
 .black-underline {
-	@apply border-b-2 border-black border-opacity-70 mx-12;
+	@apply border-b-2 border-black border-opacity-70 mx-2 md:mx-12;
 }
 
 .white-underline {
-	@apply border-b-2 border-white border-opacity-70 mx-12;
+	@apply border-b-2 border-white border-opacity-70 mx-2 md:mx-12;
 }
 
 .my-heading-black {
-	@apply uppercase font-BebasNeue font-medium text-darkGray text-[7rem];
+	@apply uppercase font-BebasNeue font-medium text-darkGray text-[3.5rem] md:text-[7rem];
 }
 
 .my-heading-white {
-	@apply uppercase font-BebasNeue font-medium text-lightWhite text-[7rem];
+	@apply uppercase font-BebasNeue font-medium text-lightWhite text-[4rem] md:text-[7rem];
 }
