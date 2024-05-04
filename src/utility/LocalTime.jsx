@@ -30,7 +30,7 @@ const NepalTime = () => {
 
 	return (
 		<div>
-			<p>{formattedTime}</p>
+			<p className="text-darkWhite">{formattedTime}</p>
 		</div>
 	);
 };
