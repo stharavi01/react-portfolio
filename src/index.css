@@ -64,18 +64,17 @@ html {
 }
 
 .black-underline {
-	@apply border-b-2 border-black border-opacity-70;
+	@apply border-b-2 border-black border-opacity-70 mx-12;
 }
 
 .white-underline {
-	@apply border-b-2 border-white border-opacity-70;
+	@apply border-b-2 border-white border-opacity-70 mx-12;
 }
 
 .my-heading-black {
-	@apply uppercase font-MontrealMedium font-medium text-lightBlack text-[5rem] 
-	tracking-tighter;
+	@apply uppercase font-BebasNeue font-medium text-darkGray text-[7rem];
 }
 
 .my-heading-white {
-	@apply uppercase font-MontrealMedium font-medium text-lightWhite text-[5rem] tracking-tighter;
+	@apply uppercase font-BebasNeue font-medium text-lightWhite text-[7rem];
 }

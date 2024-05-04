@@ -1,58 +1,17 @@
 import React from "react";
-import {
-	VerticalTimeline,
-	VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "../../data";
-import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
-import { RiReactjsLine } from "react-icons/ri";
+import About from "./About";
+import Timeline from "./Timeline";
 
 const Experience = () => {
 	return (
-		<section
-			id="experience"
-			className="w-full h-full  bg-lightBlack my-[12rem]">
+		<section id="experience" className="w-full h-full bg-lightBlack my-[10rem]">
 			{/* heading */}
-			<div>
-				<p className="my-heading-white text-center">My Experiences</p>
+			<div className="py-12">
+				<p className="my-heading-white ml-12">My Experiences</p>
 				<div className="white-underline"></div>{" "}
 			</div>
-
-			{/* Vertical Timeline */}
-			<VerticalTimeline lineColor="#aaa" className=" px-16">
-				{experiencesData.map((experience, index) => (
-					<VerticalTimelineElement
-						key={index}
-						date={experience.date}
-						iconStyle={{
-							background: "#202020",
-							color: "#f3f4f6",
-						}}
-						icon={
-							experience.type === "work" ? <FaBriefcase /> : <FaGraduationCap />
-						}
-						contentStyle={{
-							background: "#202020",
-							color: "#f3f4f6",
-						}}
-						contentArrowStyle={{
-							borderRight: "7px solid #f3f4f6",
-						}}>
-						<h3 className="font-normal mb-1 ">{experience.title}</h3>
-						<p className="font-normal text-base text-lightWhite">
-							{experience.location}
-						</p>
-						<p className="font-normal text-sm text-lightWhite">
-							{experience.description}
-						</p>
-					</VerticalTimelineElement>
-				))}
-				<VerticalTimelineElement
-					iconStyle={{ background: "#202020", color: "#f3f4f6" }}
-					icon={<RiReactjsLine />}
-				/>
-			</VerticalTimeline>
+			<About />
+			<Timeline />
 		</section>
 	);
 };

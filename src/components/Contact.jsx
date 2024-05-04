@@ -84,7 +84,7 @@ const Contact = () => {
 				</div>
 
 				{/* Bottom Left grid*/}
-				<div className="text-[4.2rem] font-OverusedGrotesk-Bold text-lightBlack opacity-80 leading-none tracking-tighter flex flex-col text-left uppercase ">
+				<div className="text-[1.5rem] font-OverusedGrotesk-Bold text-darkGray opacity-80 leading-none tracking-tighter flex flex-col text-left uppercase ">
 					<p> &copy; {new Date().getFullYear()}</p>
 					<p>Ravi Shrestha</p>
 				</div>
