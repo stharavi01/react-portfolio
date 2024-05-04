@@ -13,7 +13,7 @@ export default {
       gray: '#e1e1e1',
       darkGray: '#505050',
       white: '#FFFFFF',
-      softBlack: '#3E3232'
+      softBlack: '#31363F'
     },
     extend: {
       fontFamily: {

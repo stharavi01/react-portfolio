@@ -7,8 +7,8 @@ const App = () => {
 	return (
 		<div>
 			<Home />
-			<About />
 			<Projects />
+			<About />
 			<Experience />
 			<Contact />
 		</div>

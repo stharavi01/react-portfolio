@@ -55,10 +55,27 @@
 		url("./assets/fonts/OverusedGrotesk-ExtraBold.ttf") format("truetype");
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .text-hover {
 	@apply hover:text-lightWhite transition-colors duration-300;
 }
 
-html {
-	scroll-behavior: smooth;
+.black-underline {
+	@apply border-b-2 border-black border-opacity-70;
+}
+
+.white-underline {
+	@apply border-b-2 border-white border-opacity-70;
+}
+
+.my-heading-black {
+	@apply uppercase font-MontrealMedium font-medium text-lightBlack text-[5rem] 
+	tracking-tighter;
+}
+
+.my-heading-white {
+	@apply uppercase font-MontrealMedium font-medium text-lightWhite text-[5rem] tracking-tighter;
 }

@@ -4,14 +4,12 @@ import ProjectsRight from "./ProjectsRight";
 
 const About = () => {
 	return (
-		<section id="projects" className="w-full text-darkGray my-20">
-			{/* Selected Projects */}
-			<div className="my-24">
-				<div className="border-b-2 border-black mx-10 border-opacity-70"></div>
-				<div className="uppercase py-4 font-BebasNeue font-light text-[8rem]">
-					Selected-Projects
-				</div>
-				<div className="border-b-2 border-black mx-10 border-opacity-70"></div>
+		<section id="projects" className="w-full text-darkGray my-[12rem]">
+			{/* Heading */}
+			<div className="mb-[12rem]">
+				<div className="black-underline"></div>
+				<p className="my-heading-black">Selected Projects</p>
+				<div className="black-underline"></div>
 			</div>
 
 			{/* Projects */}
