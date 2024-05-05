@@ -64,8 +64,8 @@ const Contact = () => {
 				</div>
 
 				{/* Right column */}
-				<div>
-					<p className="border-b border-black uppercase text-bold text-lg tracking-tight font-OpenSauce-Bold">
+				<div className="hidden md:block">
+					<p className="border-b border-black uppercase text-bold text-lg tracking-tight font-OpenSauce-Bold ">
 						Resources
 					</p>
 					<div className="flex flex-col mt-2 font-bold font-MontrealMedium text-darkWhite">

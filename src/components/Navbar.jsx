@@ -21,15 +21,15 @@ const Navbar = () => {
 
 				{/* Right column */}
 				<div className="flex flex-col md:flex-row gap-y-4 justify-between">
-					<p className=" uppercase sm:flex text-hover md:w-[30%]">
+					<p className=" uppercase sm:flex text-hover md:w-[30%] hidden ">
 						Front end developer folio / 2023 - 2024
 					</p>
 
-					<p className=" items-center text-hover text-wrap md:w-1/4">
+					<p className=" items-center text-hover text-wrap md:w-1/4 hidden sm:block">
 						Open for offers & internships -
 					</p>
 
-					<a href={Resume} download="downloaded-resume.pdf">
+					<a href={Resume} download="downloaded-resume.pdf" className="">
 						<button className="px-4 py-2 lg:mt-[-0.4rem] text-sm rounded-full border hover:text-slate-50 flex items-center gap-1 cursor-pointer text-hover">
 							Resume <GoDownload />
 						</button>
