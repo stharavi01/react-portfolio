@@ -9,7 +9,7 @@ const Experience = () => {
 			className="w-full h-full bg-lightBlack my-[7rem] px-5">
 			{/* heading */}
 			<div className="py-12">
-				<p className="my-heading-white ml-12">My Experiences</p>
+				<p className="my-heading-white md:ml-12">My Experiences</p>
 				<div className="white-underline"></div>{" "}
 			</div>
 			<Skills />
