@@ -9,7 +9,7 @@ import { RiReactjsLine } from "react-icons/ri";
 
 const Timeline = () => {
 	return (
-		<div className="px-16 pb-16">
+		<div className="md:px-16 pb-16">
 			{/* Vertical Timeline */}
 			<VerticalTimeline lineColor="#aaa">
 				{experiencesData.map((experience, index) => (

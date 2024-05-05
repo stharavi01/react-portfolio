@@ -6,7 +6,7 @@ const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className=" w-full relative pb-6 px-16 text-darkGray mt-24">
+			className=" w-full relative pb-6 px-5 lg:px-16 text-darkGray mt-24">
 			<div className="heading-container ">
 				{/* mail */}
 				<div>

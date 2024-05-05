@@ -4,7 +4,9 @@ import Skills from "./Skills";
 
 const Experience = () => {
 	return (
-		<section id="experience" className="w-full h-full bg-lightBlack my-[7rem]">
+		<section
+			id="experience"
+			className="w-full h-full bg-lightBlack my-[7rem] px-5">
 			{/* heading */}
 			<div className="py-12">
 				<p className="my-heading-white ml-12">My Experiences</p>

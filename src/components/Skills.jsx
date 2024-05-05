@@ -6,7 +6,7 @@ const Skills = () => {
 			<h1 className="text-lightWhite ml-12 text-lg font-bold mb-12">
 				Some technologies I've worked with recently:
 			</h1>
-			<div className="w-2/4 mx-auto">
+			<div className="md:w-2/4 mx-auto">
 				{skillsData.map((skill, index) => (
 					<button
 						key={index}
