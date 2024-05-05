@@ -37,7 +37,7 @@ const SideNavbar = () => {
 
 			{/* Side navigation menu */}
 			<div
-				className={`fixed top-0 left-0 h-full flex justify-center w-64 md:w-96 text-4xl font-OpenSauce-Bold tracking-wide bg-white shadow-lg z-40 py-28 transition-transform duration-300 ease-in-out ${
+				className={`fixed top-0 left-0 h-full flex justify-center w-64 md:w-96 text-2xl lg:text-4xl font-OpenSauce-Bold tracking-wide bg-lightBlack shadow-lg z-40 py-32 transition-transform duration-300 ease-in-out ${
 					isOpen ? "translate-x-0" : "-translate-x-full"
 				}`}>
 				{/* Navigation menu */}
@@ -46,7 +46,7 @@ const SideNavbar = () => {
 						<li key={link.name}>
 							<a
 								href={link.hash}
-								className="block p-2 rounded hover:bg-gray-200">
+								className="block p-2 rounded text-lightWhite hover:text-white">
 								{link.name}
 							</a>
 						</li>

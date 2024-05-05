@@ -6,7 +6,9 @@ import SideNavbar from "./SideNavbar";
 const Navbar = () => {
 	return (
 		<>
-			<header className="font-semibold md:text-sm leading-tight text-darkWhite bg-black w-full grid grid-cols-[20%_1fr] lg:grid-cols-2 gap-20 md:gap-50 px-6 lg:px-14 py-5 sm:px-10 border-b border-white border-opacity-30 lg:border-none">
+			<header
+				id="about"
+				className="font-semibold md:text-sm leading-tight text-darkWhite bg-black w-full grid grid-cols-[20%_1fr] lg:grid-cols-2 gap-20 md:gap-50 px-6 lg:px-14 py-5 sm:px-10 border-b border-white border-opacity-30 lg:border-none">
 				{/* navigation icon */}
 				<div className="bg-gray rounded-full w-[4.3rem] h-[4.3rem] absolute top-8 z-10 flex justify-center items-center opacity-0">
 					<TbEqual size={50} className="text-lightBlack" />

@@ -5,9 +5,7 @@ const Home = () => {
 	return (
 		<>
 			<Navbar />
-			<section
-				id="about"
-				className="h-screen w-full relative px-5 md:px-10 bg-black text-darkWhite">
+			<section className="h-screen w-full relative px-5 md:px-10 bg-black text-darkWhite">
 				<div className="heading-container ">
 					<div className="text-[6rem] py-5 lg:text-[18.5rem] font-BebasNeue lg:tracking-[-0.4rem] sm:tracking-normal leading-none flex flex-col">
 						<div>

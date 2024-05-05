@@ -1,5 +1,3 @@
-import { projectsData } from "../../data";
-
 const ProjectsLeft = ({ project }) => {
 	return (
 		<div className="md:py-10 md:px-16 py-8 font-MontrealBold leading-normal flex flex-col justify-center">
@@ -17,7 +15,7 @@ const ProjectsLeft = ({ project }) => {
 					{project.tags.map((tag, index) => (
 						<button
 							key={index}
-							className="px-10 py-2 sm:px-2 sm:py-1 text-sm sm:text-xs rounded-full border hover:text-slate-50 uppercase hover:bg-darkGray hover:border-white hover:text-white">
+							className="px-3 py-1 sm:px-2 sm:py-1 text-sm sm:text-xs rounded-full border hover:text-slate-50 uppercase hover:bg-darkGray hover:border-white hover:text-white">
 							{tag}
 						</button>
 					))}
