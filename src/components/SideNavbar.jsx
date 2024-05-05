@@ -54,7 +54,9 @@ const SideNavbar = () => {
 						))}
 						<div className="flex mt-12 gap-6">
 							{socials.map((social) => (
-								<span>{social.icon}</span>
+								<a key={social.name} href={social.link} target="_blank">
+									<span>{social.icon}</span>
+								</a>
 							))}
 						</div>
 					</button>

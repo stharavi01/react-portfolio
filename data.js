@@ -6,6 +6,8 @@ import CosymartImage from "./src/assets/cozymart.png";
 import JobPortalImage from "./src/assets/JobPortal.png";
 import GameImage from "./src/assets/game.png";
 import Apple from "./src/assets/apple.mp4";
+import Cozymart from "./src/assets/Cozymart.mp4";
+import Jobify from "./src/assets/Jobify.mp4";
 import Bg1 from "./src/assets/bg-1.jpeg";
 import Bg2 from "./src/assets/bg-2.jpeg";
 import Bg3 from "./src/assets/bg-3.jpeg";
@@ -87,7 +89,7 @@ export const projectsData = [
         description:
             "I developed a sophisticated furniture e-commerce store. This project boasts an aesthetically pleasing UI, reusable components, robust login validation, and a seamless navigation experience across multiple pages.",
         tags: ["React", "Redux", "Tailwind", "DaisyUI",],
-        imageUrl: CosymartImage,
+        videoUrl: Cozymart,
         backgroundUrl: Bg1,
     },
     {
@@ -96,7 +98,7 @@ export const projectsData = [
         description:
             "Developed a job portal website with optimized dashboard for detailed job posting, enhanced filtering options and robust job management features for recruiters.",
         tags: ["React", "DaisyUI", "Tailwind", "Redux"],
-        imageUrl: JobPortalImage,
+        videoUrl: Jobify,
         backgroundUrl: Bg2,
     },
     {

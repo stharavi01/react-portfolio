@@ -69,11 +69,11 @@ const Contact = () => {
 						Resources
 					</p>
 					<div className="flex flex-col mt-2 font-bold font-MontrealMedium text-darkWhite">
-						<a
+						{/* <a
 							href="https://github.com/stharavi01/react-portfolio.git"
 							target="_blank">
 							Portfolio V2 Source Code
-						</a>
+						</a> */}
 						<a
 							href="https://stharaviportfolio.netlify.app"
 							className="my-[4px]"

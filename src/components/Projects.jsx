@@ -17,13 +17,15 @@ const About = () => {
 				{projectsData.map((project, index) => (
 					<>
 						{/* for smaller screen */}
-						<div className="flex flex-col md:hidden">
+						<div key={project.name} className="flex flex-col md:hidden">
 							<ProjectsLeft project={project} />
 							<ProjectsRight project={project} />
 						</div>
 
 						{/* for medium screen and above */}
-						<div className="hidden md:grid md:grid-cols-2 w-full my-28">
+						<div
+							key={project.name}
+							className="hidden md:grid md:grid-cols-2 w-full my-28">
 							{index % 2 === 0 ? (
 								<>
 									<ProjectsLeft project={project} />
