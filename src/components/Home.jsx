@@ -9,7 +9,7 @@ const Home = () => {
 				id="about"
 				className="h-screen w-full relative px-5 md:px-10 bg-black text-darkWhite">
 				<div className="heading-container ">
-					<div className="text-[6rem] py-4 lg:text-[18.5rem] font-BebasNeue lg:tracking-[-0.4rem] sm:tracking-normal leading-none flex flex-col">
+					<div className="text-[6rem] py-5 lg:text-[18.5rem] font-BebasNeue lg:tracking-[-0.4rem] sm:tracking-normal leading-none flex flex-col">
 						<div>
 							<span className="text-hover">F</span>
 							<span className="text-hover">R</span>
