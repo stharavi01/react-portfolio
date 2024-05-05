@@ -23,8 +23,8 @@ const Contact = () => {
 				</div>
 
 				{/* contact */}
-				<div className="text-[3rem] md:text-[7rem] lg:text-[13rem] font-OverusedGrotesk-Bold text-lightBlack opacity-85 tracking-[-0.4rem] leading-none flex flex-col text-center uppercase">
-					<p>Get in touch</p>
+				<div className="text-[3rem] md:text-[7rem] lg:text-[13rem] font-OverusedGrotesk-Bold text-lightBlack opacity-85 lg:tracking-[-0.4rem] leading-none flex flex-col text-center uppercase">
+					<p className="py-4 ">Get in touch</p>
 				</div>
 				<div className="black-underline "></div>
 			</div>
@@ -38,7 +38,7 @@ const Contact = () => {
 					</p>
 					<div className="flex flex-col mt-2 font-bold font-MontrealMedium text-darkWhite">
 						{links.map((link) => (
-							<a href={link.hash} className="my-[4px]">
+							<a key={link.hash} href={link.hash} className="my-[4px] ">
 								{link.name}
 							</a>
 						))}
@@ -52,7 +52,11 @@ const Contact = () => {
 					</p>
 					<div className="flex flex-col mt-2 font-bold font-MontrealMedium text-darkWhite">
 						{socials.map((social) => (
-							<a href={social.link} className="my-[4px]" target="_blank">
+							<a
+								key={social.link}
+								href={social.link}
+								className="my-[4px]"
+								target="_blank">
 								{social.name}
 							</a>
 						))}

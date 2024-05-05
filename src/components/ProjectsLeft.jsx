@@ -2,7 +2,7 @@ import { projectsData } from "../../data";
 
 const ProjectsLeft = ({ project }) => {
 	return (
-		<div className="col-span-1 md:p-10 flex flex-col justify-center font-MontrealBold leading-normal">
+		<div className="col-span-1 md:p-10 py-8 md:py-0 flex flex-col justify-center font-MontrealBold leading-normal">
 			<p className="text-xl font-MontrealBook font-normal ">
 				<span>{`${project.number}.`} </span>
 				<span className="text-2xl">Featured Projects </span>

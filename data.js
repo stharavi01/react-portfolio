@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import CosymartImage from "./src/assets/cozymart.png";
 import JobPortalImage from "./src/assets/JobPortal.png";
 import GameImage from "./src/assets/game.png";
+import Apple from "./src/assets/apple.mp4";
 import Bg1 from "./src/assets/bg-1.jpeg";
 import Bg2 from "./src/assets/bg-2.jpeg";
 import Bg3 from "./src/assets/bg-3.jpeg";
@@ -104,7 +105,7 @@ export const projectsData = [
         description:
             "Replicated the iPhone 15 Pro website, gaining expertise in 3D animations and transitions with GSAP and Three.js while enhancing visual design and interactivity",
         tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: JobPortalImage,
+        videoUrl: Apple,
         backgroundUrl: Bg3,
     },
     {
