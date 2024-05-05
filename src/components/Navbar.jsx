@@ -17,9 +17,9 @@ const Navbar = () => {
 				{/* Left column */}
 
 				<div>
-					{/* <p className="uppercase cursor-pointer text-darkWhite text-hover ">
-						<span>Ravi</span> <span className="block"> Shrestha</span>
-					</p> */}
+					<p className="ml-16 uppercase cursor-pointer text-darkWhite text-hover ">
+						<span>Rabin</span> <span className="block"> Shrestha</span>
+					</p>
 					<SideNavbar />
 				</div>
 
