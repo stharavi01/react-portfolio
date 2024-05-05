@@ -30,9 +30,9 @@ const Contact = () => {
 			</div>
 
 			{/* Grid container */}
-			<div className="grid-container grid grid-cols-[1fr 1fr] lg:grid-cols-[50%_25%_1fr] gap-12 pt-16 mt-6  ">
+			<div className="grid-container grid grid-cols-[1fr 1fr] lg:grid-cols-[50%_25%_1fr] gap-6 md:gap-12 md:pt-16 mt-6">
 				{/* Left grid */}
-				<div className="">
+				<div className="hidden md:block">
 					<p className="border-b border-black uppercase text-bold text-lg font-OpenSauce-Bold tracking-tight">
 						Navigation
 					</p>
