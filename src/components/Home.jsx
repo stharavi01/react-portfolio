@@ -37,7 +37,7 @@ const Home = () => {
 					</div>
 
 					{/* About section */}
-					<div className="w-[80%] md:w-[50%] lg:w-[18rem] flex-end lg:absolute right-6 bottom-[6rem] md:tracking-[-1.3px]">
+					<div className="w-[90%] md:w-[50%] lg:w-[18rem] flex-end lg:absolute right-12 bottom-[6rem] md:tracking-[-1.3px]">
 						{/* about content */}
 						<div className="">
 							<span className="uppercase font-light items-baseline mr-2">
@@ -53,7 +53,7 @@ const Home = () => {
 						</div>
 						{/* Local time */}
 						<a href="#experience">
-							<div className="mt-8 flex items-center justify-between ">
+							<div className="mt-10 md:mt-8 flex items-center justify-between ">
 								<LocalTime />
 								<BsArrowDown size={20} className="text-hover mt-4" />
 							</div>
