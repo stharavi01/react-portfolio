@@ -2,7 +2,7 @@ import { projectsData } from "../../data";
 
 const ProjectsRight = ({ project }) => {
 	return (
-		<div className="md:h-[60vh] col-span-1 rounded-lg cursor-pointer flex flex-col items-center pb-12 md:py-0">
+		<div className="md:h-[60vh] flex justify-center rounded-lg cursor-pointer pb-12 md:py-0">
 			<div
 				className={`w-full h-[100%] md:w-[60%] transform sm:scale-100 md:scale-125 bg-cover bg-center bg-no-repeat flex justify-center items-center px-6`}
 				style={{
