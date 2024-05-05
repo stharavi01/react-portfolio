@@ -4,7 +4,7 @@ import ProjectsRight from "./ProjectsRight";
 
 const About = () => {
 	return (
-		<section id="projects" className="w-full text-darkGray px-5">
+		<section id="projects" className="w-full text-darkGray px-5 mt-24">
 			{/* Heading */}
 			<div className=" mb-1rem md:mb-[11rem]">
 				<div className="black-underline"></div>
