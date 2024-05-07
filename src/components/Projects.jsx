@@ -8,7 +8,7 @@ const About = () => {
 			id="projects"
 			className="w-full text-darkGray px-5 mt-16 md:mt-28 ">
 			{/* Heading */}
-			<div className=" mb-1rem md:mb-[11rem]">
+			<div className=" mb-1rem md:mb-[7rem]">
 				<div className="black-underline"></div>
 				<p className="my-heading-black md:ml-12">Selected Projects</p>
 				<div className="black-underline"></div>
