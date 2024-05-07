@@ -3,12 +3,14 @@ const ProjectsLeft = ({ project }) => {
 		<div className="md:py-10 md:px-16 py-8 font-MontrealBold leading-normal flex flex-col justify-center">
 			<p className="text-xl font-MontrealBook font-normal hidden md:block">
 				<span>{`${project.number}.`} </span>
-				<span className="text-2xl ">Featured Projects </span>
+				<span className="text-lg ">Featured Projects </span>
 			</p>
-			<p className="text-2xl lg:text-4xl my-6 uppercase font-semibold">
-				{project.title}
-			</p>
-			<div className="md:w-[80%]">
+			<a href={project.link} target="_blank">
+				<p className="text-2xl lg:text-4xl my-6 uppercase font-semibold">
+					{project.title}
+				</p>
+			</a>
+			<div>
 				<p className="my-2 mb-8"> {project.description}</p>
 
 				<div className="flex flex-wrap gap-2 sm:gap-1 w-full sm:w-[80%]">

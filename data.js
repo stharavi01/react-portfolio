@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import CosymartImage from "./src/assets/cozymart.png";
 import JobPortalImage from "./src/assets/JobPortal.png";
 import GameImage from "./src/assets/game.png";
+import AppleImage from "./src/assets/appleImage.png";
 import Apple from "./src/assets/apple.mp4";
 import Cozymart from "./src/assets/Cozymart.mp4";
 import Jobify from "./src/assets/Jobify.mp4";
@@ -90,7 +91,9 @@ export const projectsData = [
             "I developed a sophisticated furniture e-commerce store. This project boasts an aesthetically pleasing UI, reusable components, robust login validation, and a seamless navigation experience across multiple pages.",
         tags: ["React", "Redux", "Tailwind", "DaisyUI",],
         videoUrl: Cozymart,
+        imageUrl: CosymartImage,
         backgroundUrl: Bg1,
+        link: "https://react-cozymart.netlify.app",
     },
     {
         title: "JobPortal Website",
@@ -99,7 +102,9 @@ export const projectsData = [
             "Developed a job portal website with optimized dashboard for detailed job posting, enhanced filtering options and robust job management features for recruiters.",
         tags: ["React", "DaisyUI", "Tailwind", "Redux"],
         videoUrl: Jobify,
+        imageUrl: JobPortalImage,
         backgroundUrl: Bg2,
+        link: "https://jobportalnp.netlify.app"
     },
     {
         title: "Apple Website",
@@ -108,7 +113,9 @@ export const projectsData = [
             "Replicated the iPhone 15 Pro website, gaining expertise in 3D animations and transitions with GSAP and Three.js while enhancing visual design and interactivity",
         tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
         videoUrl: Apple,
+        imageUrl: AppleImage,
         backgroundUrl: Bg3,
+        link: "https://applesite-clone.netlify.app/"
     },
     {
         title: "Far From Home",
@@ -116,8 +123,9 @@ export const projectsData = [
         description:
             "Far from home is a third person game in which the players guide Alisha, a stranded explorer, through a perilous island after a shipwreck. To survive, she must scavenge resources, evade hostile threats, and uncover the island's ancient mysteries.",
         tags: ["Java", "Aesprite", "Tiled Map"],
-        imageUrl: JobPortalImage,
+        imageUrl: GameImage,
         backgroundUrl: Bg4,
+        link: "https://github.com/stharavi01/2D-Platformer-Game",
     },
 ];
 
