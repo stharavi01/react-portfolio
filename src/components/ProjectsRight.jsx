@@ -3,7 +3,7 @@ const ProjectsRight = ({ project }) => {
 		<div className="w-full h-full flex rounded-lg cursor-pointer ">
 			<a href={project.link} target="_blank">
 				<div className="p-0 md:p-10">
-					{project.imageUrl ? (
+					{project.videoUrl ? (
 						<video
 							className="pointer-events-none rounded-lg"
 							autoPlay

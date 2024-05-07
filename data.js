@@ -88,7 +88,7 @@ export const projectsData = [
         title: "CosyMart",
         number: "01",
         description:
-            "I developed a sophisticated furniture e-commerce store. This project boasts an aesthetically pleasing UI, reusable components, robust login validation, and a seamless navigation experience across multiple pages.",
+            "I developed a sophisticated furniture e-commerce store. This project boasts an aesthetically pleasing UI, reusable components, robust login validation, and a seamless navigation experience across multiple pages. ",
         tags: ["React", "Redux", "Tailwind", "DaisyUI",],
         videoUrl: Cozymart,
         imageUrl: CosymartImage,

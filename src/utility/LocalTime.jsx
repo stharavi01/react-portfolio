@@ -29,7 +29,7 @@ const NepalTime = () => {
 	}, []);
 
 	return (
-		<div className="flex flex-col text-base font-bold tracking-tight leading-none ">
+		<div className="flex flex-col text-base font-bold leading-snug ">
 			<p className="mb-2">Local Time</p>
 			<p className="text-darkWhite text-hover">{formattedTime}</p>
 		</div>

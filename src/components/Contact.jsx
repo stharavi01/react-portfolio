@@ -84,13 +84,13 @@ const Contact = () => {
 				</div>
 
 				{/* Bottom Left grid*/}
-				<div className="text-[1.5rem] font-OverusedGrotesk-Bold text-darkGray opacity-80 leading-none tracking-tighter flex flex-col text-left uppercase ">
+				<div className="text-[1.5rem] font-OverusedGrotesk-Bold text-darkGray opacity-80 leading-tight flex flex-col text-left uppercase ">
 					<p> &copy; {new Date().getFullYear()}</p>
 					<p>Ravi Shrestha</p>
 				</div>
 
 				{/* Bottom Center grid*/}
-				<div className="text-base font-bold text-lightBlack opacity-85 leading-none tracking-normal  text-left uppercase grid grid-cols-2">
+				<div className="text-base font-bold text-lightBlack opacity-85 text-left uppercase grid grid-cols-2">
 					<LocalTime />
 				</div>
 
