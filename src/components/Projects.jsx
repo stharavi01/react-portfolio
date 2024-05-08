@@ -28,7 +28,7 @@ const About = () => {
 							{/* for medium screen and above */}
 							<div
 								key={project.name}
-								className="hidden md:grid md:grid-cols-2 w-full my-12 gap-10">
+								className="hidden md:grid md:grid-cols-2 w-full  gap-10">
 								{index % 2 === 0 ? (
 									<>
 										<ProjectsLeft project={project} />

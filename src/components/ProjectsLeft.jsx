@@ -1,3 +1,5 @@
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+
 const ProjectsLeft = ({ project }) => {
 	return (
 		<div className="md:py-10 md:px-10 py-8 font-MontrealBold leading-normal flex flex-col justify-center ">
@@ -10,10 +12,18 @@ const ProjectsLeft = ({ project }) => {
 					{project.title}
 				</p>
 			</a>
-			<div className="bg-softGray rounded-lg p-6">
-				<p className="my-2"> {project.description}</p>
+			<div className="bg-softGray font-OverusedGrotesk-Light text-lg rounded-lg p-4 leading-normal tracking-wide">
+				<p> {project.description}</p>
+				<div className="flex gap-4 mt-4 cursor-pointer opacity-75">
+					<a href={project.link}>
+						<FaGithub size={25} />
+					</a>
+					<a href={project.githubLink}>
+						<FaExternalLinkAlt size={25} />
+					</a>
+				</div>
 			</div>
-			<div className="mt-4 flex flex-wrap gap-2 w-full ">
+			<div className="mt-6 flex flex-wrap gap-2 w-full ">
 				{project.tags.map((tag, index) => (
 					<button
 						key={index}

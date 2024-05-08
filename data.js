@@ -88,45 +88,50 @@ export const projectsData = [
         title: "CosyMart",
         number: "01",
         description:
-            "I developed a sophisticated furniture e-commerce store. This project boasts an aesthetically pleasing UI, reusable components, robust login validation, and a seamless navigation experience across multiple pages. ",
+            "Cozymart is an online furniture store that offers customers a seamless shopping experience. The website showcases a wide selection of products with detailed visuals, allowing users to explore different colors and styles. Customers can authenticate their accounts, manage their carts, and easily complete purchases through a smooth checkout process.",
         tags: ["React", "Redux", "Tailwind", "DaisyUI",],
         videoUrl: Cozymart,
         imageUrl: CosymartImage,
         backgroundUrl: Bg1,
         link: "https://react-cozymart.netlify.app",
+        githubLink: ""
     },
     {
         title: "JobPortal Website",
         number: "02",
         description:
-            "Developed a job portal website with optimized dashboard for detailed job posting, enhanced filtering options and robust job management features for recruiters.",
+            "Jobster is a platform that helps users manage and track their job applications across different positions. Users can monitor the status of applications (pending, rejected, or interview) and set up profiles with ease. The platform helps users to understand their application history and performance to streamlines the job search process,",
         tags: ["React", "DaisyUI", "Tailwind", "Redux"],
         videoUrl: Jobify,
         imageUrl: JobPortalImage,
         backgroundUrl: Bg2,
-        link: "https://jobportalnp.netlify.app"
+        link: "https://jobportalnp.netlify.app",
+        githubLink: ""
     },
     {
         title: "Apple Website",
         number: "03",
         description:
-            "Replicated the iPhone 15 Pro website, gaining expertise in 3D animations and transitions with GSAP and Three.js while enhancing visual design and interactivity",
+            "The iPhone 15 Pro website clone is a project built to learn advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS for modern, visually appealing design. This project highlights front-end development skills and the creation of interactive, dynamic web interfaces.",
         tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
         videoUrl: Apple,
         imageUrl: AppleImage,
         backgroundUrl: Bg3,
-        link: "https://applesite-clone.netlify.app/"
+        link: "https://applesite-clone.netlify.app/",
+        githubLink: ""
     },
     {
         title: "Far From Home",
         number: "04",
         description:
-            "Far from home is a third person game in which the players guide Alisha, a stranded explorer, through a perilous island after a shipwreck. To survive, she must scavenge resources, evade hostile threats, and uncover the island's ancient mysteries.",
-        tags: ["Java", "Aesprite", "Tiled Map"],
+            "Far From Home is a 2D platformer game developed using Java as a final year project for the BSc. CSIT curriculum. Players control a character navigating levels filled with enemies and obstacles, aiming to reach the end point to progress to more challenging stages. ",
+        tags: ["Java", "Aseprite", "Tiled Map"],
         imageUrl: GameImage,
         backgroundUrl: Bg4,
         link: "https://github.com/stharavi01/2D-Platformer-Game",
-    },
+        githubLink: "https://github.com/stharavi01/2D-Platformer-Game"
+    }
+
 ];
 
 export const skillsData = [
