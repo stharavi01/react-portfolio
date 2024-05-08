@@ -15,7 +15,7 @@ const About = () => {
 			</div>
 
 			{/* Projects */}
-			<div id="smooth-wrapper" className="sm:px-20 pb-2 ">
+			<div id="smooth-wrapper" className="sm:px-28  ">
 				<div id="smooth-content">
 					{projectsData.map((project, index) => (
 						<>
@@ -28,7 +28,7 @@ const About = () => {
 							{/* for medium screen and above */}
 							<div
 								key={project.name}
-								className="hidden md:grid md:grid-cols-2 w-full my-28 gap-10">
+								className="hidden md:grid md:grid-cols-2 w-full my-12 gap-10">
 								{index % 2 === 0 ? (
 									<>
 										<ProjectsLeft project={project} />

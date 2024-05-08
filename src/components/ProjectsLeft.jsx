@@ -1,6 +1,6 @@
 const ProjectsLeft = ({ project }) => {
 	return (
-		<div className="md:py-10 md:px-16 py-8 font-MontrealBold leading-normal flex flex-col justify-center">
+		<div className="md:py-10 md:px-10 py-8 font-MontrealBold leading-normal flex flex-col justify-center ">
 			<p className="text-xl font-MontrealBook font-normal hidden md:block">
 				<span>{`${project.number}.`} </span>
 				<span className="text-lg ">Featured Projects </span>
@@ -10,18 +10,17 @@ const ProjectsLeft = ({ project }) => {
 					{project.title}
 				</p>
 			</a>
-			<div>
-				<p className="my-2 mb-8"> {project.description}</p>
-
-				<div className="flex flex-wrap gap-2 sm:gap-1 w-full sm:w-[80%]">
-					{project.tags.map((tag, index) => (
-						<button
-							key={index}
-							className="px-3 py-1 sm:px-2 sm:py-1 text-sm sm:text-xs rounded-full border hover:text-slate-50 uppercase hover:bg-darkGray hover:border-white hover:text-white">
-							{tag}
-						</button>
-					))}
-				</div>
+			<div className="bg-softGray rounded-lg p-6">
+				<p className="my-2"> {project.description}</p>
+			</div>
+			<div className="mt-4 flex flex-wrap gap-2 w-full ">
+				{project.tags.map((tag, index) => (
+					<button
+						key={index}
+						className="px-3 py-1 sm:px-[12px] sm:py-[5px] text-sm sm:text-xs rounded-full border hover:text-slate-50 uppercase hover:bg-darkGray hover:border-white hover:text-white">
+						{tag}
+					</button>
+				))}
 			</div>
 		</div>
 	);

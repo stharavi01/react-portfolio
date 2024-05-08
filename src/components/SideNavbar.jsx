@@ -33,7 +33,7 @@ const SideNavbar = () => {
 	return (
 		<div className="relative h-full">
 			{/* Circle background for the hamburger button */}
-			<div className="bg-gray w-[3.5rem] h-[3.5rem] fixed top-3 lg:top-4 left-4 z-50 rounded-full flex items-center justify-center">
+			<div className="bg-darkWhite w-[3.5rem] h-[3.5rem] fixed top-3 lg:top-4 left-4 z-50 rounded-full flex items-center justify-center">
 				{/* Hamburger menu button */}
 				<button
 					className="focus:outline-none w-full h-full flex items-center justify-center"
@@ -42,15 +42,15 @@ const SideNavbar = () => {
 					<div class="w-6 h-6 relative top-1">
 						{/* Span elements for the hamburger and cross icons */}
 						<span
-							className={`block w-full h-0.5 bg-black transition-transform transform ${
+							className={`block w-full h-0.5 bg-white transition-transform transform ${
 								isOpen ? "rotate-45 translate-y-1.5" : ""
 							}`}></span>
 						<span
-							className={`block w-full h-0.5 bg-black transition-opacity my-1 ${
+							className={`block w-full h-0.5 bg-white transition-opacity my-1 ${
 								isOpen ? "opacity-0" : ""
 							}`}></span>
 						<span
-							className={`block w-full h-0.5 bg-black transition-transform transform ${
+							className={`block w-full h-0.5 bg-white transition-transform transform ${
 								isOpen ? "-rotate-45 -translate-y-1.5" : ""
 							}`}></span>
 					</div>
