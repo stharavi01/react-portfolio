@@ -94,7 +94,7 @@ export const projectsData = [
         imageUrl: CosymartImage,
         backgroundUrl: Bg1,
         link: "https://react-cozymart.netlify.app",
-        githubLink: ""
+        githubLink: "https://github.com/stharavi01/cosyMart"
     },
     {
         title: "JobPortal Website",
@@ -106,7 +106,7 @@ export const projectsData = [
         imageUrl: JobPortalImage,
         backgroundUrl: Bg2,
         link: "https://jobportalnp.netlify.app",
-        githubLink: ""
+        githubLink: "https://github.com/stharavi01/job-portal"
     },
     {
         title: "Apple Website",
@@ -118,7 +118,7 @@ export const projectsData = [
         imageUrl: AppleImage,
         backgroundUrl: Bg3,
         link: "https://applesite-clone.netlify.app/",
-        githubLink: ""
+        githubLink: "https://github.com/stharavi01/apple_website"
     },
     {
         title: "Far From Home",
