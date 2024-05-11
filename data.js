@@ -112,7 +112,7 @@ export const projectsData = [
         title: "Apple Website",
         number: "03",
         description:
-            "The iPhone 15 Pro website clone is a project built to learn advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS for modern, visually appealing design. This project highlights front-end development skills and the creation of interactive, dynamic web interfaces.",
+            "The iPhone 15 Pro website clone is a project built to learn advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS for modern, visually appealing design.",
         tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
         videoUrl: Apple,
         imageUrl: AppleImage,
