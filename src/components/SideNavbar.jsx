@@ -39,7 +39,7 @@ const SideNavbar = () => {
 					className="focus:outline-none w-full h-full flex items-center justify-center"
 					onClick={toggleMenu}>
 					{/* Hamburger menu icon div */}
-					<div class="w-6 h-6 relative top-1">
+					<div className="w-6 h-6 relative top-1">
 						{/* Span elements for the hamburger and cross icons */}
 						<span
 							className={`block w-full h-0.5 bg-white transition-transform transform ${
