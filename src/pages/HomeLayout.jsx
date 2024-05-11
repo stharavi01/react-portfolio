@@ -1,27 +1,35 @@
+import React, { useEffect } from "react";
+import locomotiveScroll from "locomotive-scroll";
 import Experience from "../components/Experience";
 import Home from "../components/Home";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import SideNavbar from "../components/SideNavbar";
-import { useEffect } from "react";
 
-const scrollRef = React.createRef();
-
-useEffect(() => {
-	const scroll = new locomotiveScroll({
-		el: scrollRef.current,
-		smooth: true,
-	});
-});
 const HomeLayout = () => {
+	// useEffect(() => {
+	// 	const scroll = new locomotiveScroll({
+	// 		el: document.querySelector("#main-scroll"),
+	// 		smooth: true,
+	// 	});
+
+	// 	// Clean up function
+	// 	return () => {
+	// 		scroll.destroy();
+	// 	};
+	// }, []);
+
 	return (
 		<>
 			<SideNavbar />
-			<Home />
-			<Projects />
-			<Experience />
-			<Contact />
+			<div id="main-scroll">
+				<Home />
+				<Projects />
+				<Experience />
+				<Contact />
+			</div>
 		</>
 	);
 };
+
 export default HomeLayout;
