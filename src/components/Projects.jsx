@@ -5,14 +5,13 @@ import ProjectsRight from "./ProjectsRight";
 const About = () => {
 	return (
 		<section id="projects" className="w-full text-darkGray px-5 mt-16 md:mt-28">
+			{/* Heading */}
+			<div className="mb-1rem md:mb-[4rem]">
+				<div className="black-underline"></div>
+				<p className="my-heading-black md:ml-12">Selected Projects</p>
+				<div className="black-underline"></div>
+			</div>
 			<div className="sm:px-28">
-				{/* Heading */}
-				<div className="mb-1rem md:mb-[4rem]">
-					<div className="black-underline"></div>
-					<p className="my-heading-black md:ml-12">Selected Projects</p>
-					<div className="black-underline"></div>
-				</div>
-
 				{/* Projects */}
 				{projectsData.map((project, index) => (
 					<div key={index}>

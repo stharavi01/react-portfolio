@@ -1,18 +1,16 @@
 import React from 'react';
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import CosymartImage from "./src/assets/cozymart.png";
 import JobPortalImage from "./src/assets/JobPortal.png";
 import GameImage from "./src/assets/game.png";
 import AppleImage from "./src/assets/appleImage.png";
+import PortfolioImage from "./src/assets/PortfolioImage.png";
 import Apple from "./src/assets/apple.mp4";
 import Cozymart from "./src/assets/Cozymart.mp4";
 import Jobify from "./src/assets/Jobify.mp4";
-import Bg1 from "./src/assets/bg-1.jpeg";
-import Bg2 from "./src/assets/bg-2.jpeg";
-import Bg3 from "./src/assets/bg-3.jpeg";
-import Bg4 from "./src/assets/bg-4.jpeg";
+import Portfolio from './src/assets/portfolio.mp4';
+import GameVideo from './src/assets/GameVideo.mp4';
 import { FaGithub, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export const links = [
@@ -92,7 +90,7 @@ export const projectsData = [
         tags: ["React", "Redux", "Tailwind", "DaisyUI",],
         videoUrl: Cozymart,
         imageUrl: CosymartImage,
-        backgroundUrl: Bg1,
+
         link: "https://react-cozymart.netlify.app",
         githubLink: "https://github.com/stharavi01/cosyMart"
     },
@@ -104,7 +102,6 @@ export const projectsData = [
         tags: ["React", "DaisyUI", "Tailwind", "Redux"],
         videoUrl: Jobify,
         imageUrl: JobPortalImage,
-        backgroundUrl: Bg2,
         link: "https://jobportalnp.netlify.app",
         githubLink: "https://github.com/stharavi01/job-portal"
     },
@@ -116,18 +113,28 @@ export const projectsData = [
         tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
         videoUrl: Apple,
         imageUrl: AppleImage,
-        backgroundUrl: Bg3,
+        link: "https://applesite-clone.netlify.app/",
+        githubLink: "https://github.com/stharavi01/apple_website"
+    },
+    {
+        title: "React Portfolio Website",
+        number: "04",
+        description:
+            "I created a stylish portfolio website using React, Tailwind CSS, and GSAP to showcase my projects. With easy navigation, polished design, and smooth animations, visitors can explore my work seamlessly. Every part of the site reflects my dedication to creativity and excellence in web development.",
+        tags: ["React", "Tailwind", "GSAP"],
+        videoUrl: Portfolio,
+        imageUrl: PortfolioImage,
         link: "https://applesite-clone.netlify.app/",
         githubLink: "https://github.com/stharavi01/apple_website"
     },
     {
         title: "Far From Home",
-        number: "04",
+        number: "05",
         description:
-            "Far From Home is a 2D platformer game developed using Java as a final year project for the BSc. CSIT curriculum. Players control a character navigating levels filled with enemies and obstacles, aiming to reach the end point to progress to more challenging stages. ",
+            "Far From Home is a 2D platformer game developed using Java as a final year project for the BSc. CSIT curriculum. In this game the players control a character navigating levels filled with enemies and obstacles, aiming to reach the end point to progress to more challenging stages. ",
         tags: ["Java", "Aseprite", "Tiled Map"],
+        videoUrl: GameVideo,
         imageUrl: GameImage,
-        backgroundUrl: Bg4,
         link: "https://github.com/stharavi01/2D-Platformer-Game",
         githubLink: "https://github.com/stharavi01/2D-Platformer-Game"
     }

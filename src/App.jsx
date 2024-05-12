@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import LocomotiveScroll from "locomotive-scroll";
+import React from "react";
 import SideNavbar from "./components/SideNavbar";
 import Home from "./components/Home";
 import Projects from "./components/Projects";

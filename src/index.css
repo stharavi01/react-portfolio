@@ -84,11 +84,11 @@ body {
 }
 
 .black-underline {
-	@apply border-b-2 border-black border-opacity-70 mx-2 md:mx-12;
+	@apply border-b-2 border-black border-opacity-70 mx-2 md:mx-6;
 }
 
 .white-underline {
-	@apply border-b-2 border-white border-opacity-70 mx-2 md:mx-12;
+	@apply border-b-2 border-white border-opacity-70 mx-2 md:mx-6;
 }
 
 .my-heading-black {
