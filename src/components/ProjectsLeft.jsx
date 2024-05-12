@@ -15,10 +15,10 @@ const ProjectsLeft = ({ project }) => {
 			<div className="bg-softGray font-OverusedGrotesk-Light text-lg rounded-lg p-4 leading-normal tracking-wide">
 				<p> {project.description}</p>
 				<div className="flex gap-4 mt-4 cursor-pointer opacity-75">
-					<a href={project.link} target="_blank">
+					<a href={project.link} target="_blank" className="icons-hover">
 						<FaGithub size={25} />
 					</a>
-					<a href={project.githubLink} target="_blank">
+					<a href={project.githubLink} target="_blank" className="icons-hover">
 						<FaExternalLinkAlt size={25} />
 					</a>
 				</div>

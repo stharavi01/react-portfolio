@@ -8,7 +8,7 @@ const Experience = () => {
 			id="experience"
 			className="w-full h-full bg-lightBlack my-[5rem] md:my-[4rem] px-5">
 			{/* heading */}
-			<div className="py-12">
+			<div className="py-12 text-center">
 				<p className="my-heading-white md:ml-12">My Experiences</p>
 				<div className="white-underline"></div>{" "}
 			</div>

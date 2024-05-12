@@ -98,3 +98,7 @@ body {
 .my-heading-white {
 	@apply uppercase font-BebasNeue font-medium text-lightWhite text-[4rem] md:text-[7rem];
 }
+
+.icons-hover:hover {
+	@apply transform scale-110 transition;
+}

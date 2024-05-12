@@ -9,13 +9,15 @@ const Navbar = () => {
 	useGSAP(() => {
 		gsap.from("#my-name", {
 			opacity: 0,
-			duration: 1.4,
+			duration: 0.6,
+			y: -50,
 			ease: "power1.inOut",
 		});
 		gsap.from("#my-nav", {
 			opacity: 0,
-			duration: 1.4,
-			ease: "power1.inOut",
+			duration: 0.6,
+			y: -50,
+			ease: "sine.in",
 		});
 	}, []);
 

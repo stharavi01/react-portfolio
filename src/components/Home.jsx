@@ -4,33 +4,21 @@ import LocalTime from "../utility/LocalTime";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
+const animateElement = (elementId, delay, yValue) => {
+	gsap.from(`#${elementId}`, {
+		opacity: 0,
+		y: yValue,
+		delay,
+		ease: "power1.inOut",
+	});
+};
+
 const Home = () => {
 	useGSAP(() => {
-		// Initial animations for the text elements
-		gsap.from("#text1", {
-			opacity: 0,
-			y: 600,
-			delay: 0.8,
-			ease: "power1.inOut",
-		});
-		gsap.from("#text2", {
-			opacity: 0,
-			y: 600,
-			delay: 0.8,
-			ease: "power1.inOut",
-		});
-		gsap.from("#text3", {
-			opacity: 0,
-			y: 700,
-			delay: 1,
-			ease: "power1.inOut",
-		});
-		gsap.from("#aboutText", {
-			opacity: 0,
-			y: 600,
-			delay: 1.2,
-			ease: "power1.inOut",
-		});
+		animateElement("text1", 0.8, 100);
+		animateElement("text2", 0.8, 100);
+		animateElement("text3", 1, 200);
+		animateElement("aboutText", 1.3, 200);
 	}, []);
 
 	return (

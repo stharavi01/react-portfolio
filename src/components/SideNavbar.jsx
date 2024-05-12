@@ -1,10 +1,8 @@
 import React, { useRef, useState } from "react";
 import { links, socials } from "../../data";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 
 const SideNavbar = () => {
-	// Create an array of references for the list items
 	const navRefs = links.map(() => useRef(null));
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -69,6 +67,7 @@ const SideNavbar = () => {
 							key={link.name}
 							ref={navRefs[index]}
 							className="p-4 space-y-6"
+							onClick={toggleMenu}
 							onMouseEnter={() => handleMouseEnter(navRefs[index])}
 							onMouseLeave={() => handleMouseLeave(navRefs[index])}>
 							<a
@@ -81,11 +80,12 @@ const SideNavbar = () => {
 					<div className="flex mt-12 gap-6 ">
 						{socials.map((social) => (
 							<a
+								onClick={toggleMenu}
 								key={social.name}
 								href={social.link}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="transform hover:scale-125 transition">
+								className="icons-hover">
 								<span className="">{social.icon}</span>
 							</a>
 						))}

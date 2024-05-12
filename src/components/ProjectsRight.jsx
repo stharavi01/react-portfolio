@@ -2,10 +2,12 @@ import { useState, useRef } from "react";
 import { FaCirclePause } from "react-icons/fa6";
 import { FaCirclePlay } from "react-icons/fa6";
 import { VscDebugRestart } from "react-icons/vsc";
+import gsap from "gsap";
 
 const ProjectsRight = ({ project }) => {
 	const videoRef = useRef(null);
 	const [isPlaying, setIsPlaying] = useState(true);
+	const [isHovered, setIsHovered] = useState(false);
 
 	const handlePause = () => {
 		if (videoRef.current) {
@@ -26,8 +28,24 @@ const ProjectsRight = ({ project }) => {
 		}
 	};
 
+	const handleVideoHover = () => {
+		setIsHovered(true);
+	};
+
+	const handleVideoLeave = () => {
+		setIsHovered(false);
+	};
+
+	const iconButtonStyle = {
+		opacity: isHovered ? 0.7 : 0,
+		transition: "opacity 0.3s ease",
+	};
+
 	return (
-		<div className="w-full h-full md:px-10 flex flex-col justify-center items-center rounded-lg cursor-pointer ">
+		<div
+			className="w-full h-full md:px-10 flex flex-col justify-center items-center rounded-lg cursor-pointer"
+			onMouseEnter={handleVideoHover}
+			onMouseLeave={handleVideoLeave}>
 			<a href={project.link} target="_blank" className="mt-8">
 				{project.videoUrl ? (
 					<video
@@ -48,17 +66,17 @@ const ProjectsRight = ({ project }) => {
 					/>
 				)}
 			</a>
-			<div className="mt-4 opacity-80">
+			<div className="mt-4" style={iconButtonStyle}>
 				{isPlaying ? (
-					<button className="mr-4" onClick={handlePause}>
+					<button className="mr-4 icons-hover" onClick={handlePause}>
 						<FaCirclePause size={35} />
 					</button>
 				) : (
-					<button className="mr-4" onClick={handlePause}>
+					<button className="mr-4 icons-hover" onClick={handlePause}>
 						<FaCirclePlay size={35} />
 					</button>
 				)}
-				<button onClick={handleRestart}>
+				<button onClick={handleRestart} className="icons-hover">
 					<VscDebugRestart size={35} />
 				</button>
 			</div>
