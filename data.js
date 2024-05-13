@@ -110,7 +110,7 @@ export const projectsData = [
         number: "03",
         description:
             "The iPhone 15 Pro website clone is a project built to learn advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS for modern, visually appealing design.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+        tags: ["React", "Tailwind", "GSAP", "ThreeJS"],
         videoUrl: Apple,
         imageUrl: AppleImage,
         link: "https://applesite-clone.netlify.app/",

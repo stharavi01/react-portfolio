@@ -73,7 +73,8 @@ const Home = () => {
 								crafting ideas, visuals, and typography into unforgettable
 								digital experiences. With over a year of experience, I bring a
 								unique blend of design and development skills to every project.
-								My main focus is React.js and Next.js.
+								My main focus is React.js and Next.js but I'm open to learning
+								new things.
 							</span>
 						</div>
 						{/* Local time */}
