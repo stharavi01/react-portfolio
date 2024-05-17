@@ -53,7 +53,7 @@ const ProjectsRight = ({ project }) => {
 					backgroundImage: `url(${project.background}) `,
 					backgroundBlendMode: "overlay",
 				}}>
-				<a href={project.link} target="_blank" className="mt-20">
+				<a href={project.link} target="_blank" className="mt-16">
 					<video
 						className="pointer-events-none"
 						ref={videoRef}
