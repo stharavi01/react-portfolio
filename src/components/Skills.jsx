@@ -2,11 +2,17 @@ import { skillsData } from "../../data";
 
 const Skills = () => {
 	return (
-		<section id="Skills" className="w-full text-center mb-12">
-			<h1 className="text-lightWhite md:ml-12 text-lg font-bold mb-12">
+		<section id="Skills" className="w-full text-center mb-4">
+			<h1
+				className="text-lightWhite md:ml-12 text-lg font-bold "
+				data-scroll
+				data-scroll-speed="0.2">
 				Some technologies I've worked with recently:
 			</h1>
-			<div className="md:w-2/4 mx-auto">
+			<div
+				className="md:w-2/4 mx-auto mt-8 md:mt-0"
+				data-scroll
+				data-scroll-speed="0.2">
 				{skillsData.map((skill, index) => (
 					<button
 						key={index}

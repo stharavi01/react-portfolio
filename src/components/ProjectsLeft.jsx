@@ -2,8 +2,11 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectsLeft = ({ project }) => {
 	return (
-		<div className="md:py-10 md:px-10 py-8 font-MontrealBold leading-normal flex flex-col justify-center ">
-			<p className="text-xl font-MontrealBook font-normal hidden md:block">
+		<div
+			className="md:px-10 mb-16 md:mb-0 font-MontrealBold leading-normal flex flex-col justify-center"
+			data-scroll
+			data-scroll-speed="0.1">
+			<p className="text-xl font-normal hidden md:block">
 				<span>{`${project.number}.`} </span>
 				<span className="text-lg ">Featured Projects </span>
 			</p>

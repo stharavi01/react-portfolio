@@ -14,6 +14,7 @@ const App = () => {
 		const scroll = new LocomotiveScroll({
 			el: scrollRef.current,
 			smooth: true,
+			multiplier: 9,
 		});
 
 		return () => {
@@ -24,10 +25,10 @@ const App = () => {
 	return (
 		<div data-scroll-container ref={scrollRef}>
 			<SideNavbar />
-			<Home data-scroll-section />
-			<Projects data-scroll-section />
-			<Experience data-scroll-section />
-			<Contact data-scroll-section />
+			<Home />
+			<Projects />
+			<Experience />
+			<Contact />
 		</div>
 	);
 };

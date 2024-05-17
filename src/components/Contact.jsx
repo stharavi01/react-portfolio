@@ -10,27 +10,38 @@ const Contact = () => {
 			<div className="heading-container ">
 				{/* mail */}
 				<div>
-					<p className="text-center text-sm my-[4px] font-OpenSauce-Light tracking-tighter font-bold text-darkGray ">
+					<p
+						className="text-center text-sm my-[4px] font-OpenSauce-Light tracking-tighter font-bold text-darkGray"
+						data-scroll
+						data-scroll-speed="0.08">
 						Have an offer? Drop me an email :
 					</p>
 					<a
 						href="mailto:shrestharavi06@gmail.com"
 						className="cursor-pointer hover:text-red-400 relative z-30 text-center">
-						<p className="text-center text-2xl mb-[-8px] font-OverusedGrotesk-Bold tracking-tight font-bold text-darkGray ">
+						<p
+							className="text-center text-2xl mb-[-8px] font-OverusedGrotesk-Bold tracking-tight font-bold text-darkGray"
+							data-scroll
+							data-scroll-speed="0.1">
 							shrestharavi06@gmail.com
 						</p>
 					</a>
 				</div>
 
 				{/* contact */}
-				<div className="text-[3rem] md:text-[7rem] lg:text-[13rem] font-OverusedGrotesk-Bold text-lightBlack opacity-85 lg:tracking-[-0.4rem] leading-none flex flex-col text-center uppercase">
+				<div
+					className="text-[3rem] md:text-[7rem] lg:text-[12.5rem] font-OverusedGrotesk-Bold text-lightBlack opacity-85 lg:tracking-[-0.4rem] leading-none flex flex-col text-center uppercase black-underline"
+					data-scroll
+					data-scroll-speed="0.2">
 					<p className="py-4 ">Get in touch</p>
 				</div>
-				<div className="black-underline "></div>
 			</div>
 
 			{/* Grid container */}
-			<div className="grid-container grid grid-cols-[1fr 1fr] lg:grid-cols-[50%_25%_1fr] gap-6 md:gap-12 md:pt-16 mt-6">
+			<div
+				className="grid-container grid grid-cols-[1fr 1fr] lg:grid-cols-[50%_25%_1fr] gap-6 md:gap-12 md:pt-6 mt-6"
+				data-scroll
+				data-scroll-speed="0.1">
 				{/* Left grid */}
 				<div className="hidden md:block">
 					<p className="border-b border-black uppercase text-bold text-lg font-OpenSauce-Bold tracking-tight">

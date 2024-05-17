@@ -2,7 +2,6 @@ import { useState, useRef } from "react";
 import { FaCirclePause } from "react-icons/fa6";
 import { FaCirclePlay } from "react-icons/fa6";
 import { VscDebugRestart } from "react-icons/vsc";
-import gsap from "gsap";
 
 const ProjectsRight = ({ project }) => {
 	const videoRef = useRef(null);
@@ -43,42 +42,44 @@ const ProjectsRight = ({ project }) => {
 
 	return (
 		<div
+			data-scroll
+			data-scroll-speed="0.4"
 			className="w-full h-full md:px-10 flex flex-col justify-center items-center rounded-lg cursor-pointer"
 			onMouseEnter={handleVideoHover}
 			onMouseLeave={handleVideoLeave}>
-			<a href={project.link} target="_blank" className="mt-8">
-				{project.videoUrl ? (
+			<div
+				className="h-full px-6 rounded-xl flex flex-col items-center justify-center"
+				style={{
+					backgroundImage: `url(${project.background}) `,
+					backgroundBlendMode: "overlay",
+				}}>
+				<a href={project.link} target="_blank" className="mt-12">
 					<video
-						className="pointer-events-none rounded-lg"
+						className="pointer-events-none rounded-lg "
 						ref={videoRef}
 						autoPlay
 						muted
 						loop
 						playsInline
-						key={project.videoUrl}>
+						key={project.videoUrl}
+						style={{ transform: "scaleY(1.2)" }}>
 						<source src={project.videoUrl} type="video/mp4" />
 					</video>
-				) : (
-					<img
-						src={project.imageUrl}
-						alt="Project image"
-						className="rounded-lg"
-					/>
-				)}
-			</a>
-			<div className="mt-4" style={iconButtonStyle}>
-				{isPlaying ? (
-					<button className="mr-4 icons-hover" onClick={handlePause}>
-						<FaCirclePause size={35} />
-					</button>
-				) : (
-					<button className="mr-4 icons-hover" onClick={handlePause}>
-						<FaCirclePlay size={35} />
-					</button>
-				)}
-				<button onClick={handleRestart} className="icons-hover">
-					<VscDebugRestart size={35} />
-				</button>
+					<div className="mt-4 flex justify-center" style={iconButtonStyle}>
+						{isPlaying ? (
+							<button className="mr-4 icons-hover" onClick={handlePause}>
+								<FaCirclePause size={35} />
+							</button>
+						) : (
+							<button className="mr-4 icons-hover" onClick={handlePause}>
+								<FaCirclePlay size={35} />
+							</button>
+						)}
+						<button onClick={handleRestart} className="icons-hover">
+							<VscDebugRestart size={35} />
+						</button>
+					</div>
+				</a>
 			</div>
 		</div>
 	);

@@ -1,16 +1,24 @@
 import React from 'react';
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
+// images
 import CosymartImage from "./src/assets/cozymart.png";
 import JobPortalImage from "./src/assets/JobPortal.png";
 import GameImage from "./src/assets/game.png";
 import AppleImage from "./src/assets/appleImage.png";
 import PortfolioImage from "./src/assets/PortfolioImage.png";
+// videos
 import Apple from "./src/assets/apple.mp4";
 import Cozymart from "./src/assets/Cozymart.mp4";
 import Jobify from "./src/assets/Jobify.mp4";
 import Portfolio from './src/assets/portfolio.mp4';
 import GameVideo from './src/assets/GameVideo.mp4';
+// background image
+import Bg1 from "./src/assets/bg-1.jpeg";
+import Bg2 from './src/assets/bg-2.jpeg';
+import Bg3 from './src/assets/bg-3.jpeg';
+import Bg4 from './src/assets/bg-4.jpeg';
+import Bg5 from './src/assets/bg-5.jpeg';
 import { FaGithub, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export const links = [
@@ -90,7 +98,7 @@ export const projectsData = [
         tags: ["React", "Redux", "Tailwind", "DaisyUI",],
         videoUrl: Cozymart,
         imageUrl: CosymartImage,
-
+        background: Bg1,
         link: "https://react-cozymart.netlify.app",
         githubLink: "https://github.com/stharavi01/cosyMart"
     },
@@ -102,6 +110,7 @@ export const projectsData = [
         tags: ["React", "DaisyUI", "Tailwind", "Redux"],
         videoUrl: Jobify,
         imageUrl: JobPortalImage,
+        background: Bg2,
         link: "https://jobportalnp.netlify.app",
         githubLink: "https://github.com/stharavi01/job-portal"
     },
@@ -113,6 +122,7 @@ export const projectsData = [
         tags: ["React", "Tailwind", "GSAP", "ThreeJS"],
         videoUrl: Apple,
         imageUrl: AppleImage,
+        background: Bg5,
         link: "https://applesite-clone.netlify.app/",
         githubLink: "https://github.com/stharavi01/apple_website"
     },
@@ -124,6 +134,7 @@ export const projectsData = [
         tags: ["React", "Tailwind", "GSAP"],
         videoUrl: Portfolio,
         imageUrl: PortfolioImage,
+        background: Bg4,
         link: "https://applesite-clone.netlify.app/",
         githubLink: "https://github.com/stharavi01/apple_website"
     },
@@ -135,6 +146,7 @@ export const projectsData = [
         tags: ["Java", "Aseprite", "Tiled Map"],
         videoUrl: GameVideo,
         imageUrl: GameImage,
+        background: Bg3,
         link: "https://github.com/stharavi01/2D-Platformer-Game",
         githubLink: "https://github.com/stharavi01/2D-Platformer-Game"
     }

@@ -26,7 +26,8 @@ const Home = () => {
 			<Navbar />
 			<section
 				id="headings"
-				className="h-[95vh] md:h-screen w-full relative px-5 md:px-10 bg-black text-darkWhite">
+				className="h-[95vh] md:h-screen w-full relative px-5 md:px-10 bg-black text-darkWhite"
+				data-scroll-section>
 				<div className="heading-container">
 					<div className="text-[6rem] py-5 lg:text-[18.5rem] font-BebasNeue lg:tracking-[-0.4rem] sm:tracking-normal leading-none flex flex-col">
 						<div>
