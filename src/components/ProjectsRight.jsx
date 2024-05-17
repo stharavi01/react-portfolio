@@ -48,14 +48,14 @@ const ProjectsRight = ({ project }) => {
 			onMouseEnter={handleVideoHover}
 			onMouseLeave={handleVideoLeave}>
 			<div
-				className="h-full px-6 flex flex-col items-center justify-center"
+				className="h-full px-6 flex flex-col items-center justify-center rounded-xl"
 				style={{
 					backgroundImage: `url(${project.background}) `,
 					backgroundBlendMode: "overlay",
 				}}>
 				<a href={project.link} target="_blank" className="mt-20">
 					<video
-						className="pointer-events-none rounded-lg"
+						className="pointer-events-none"
 						ref={videoRef}
 						autoPlay
 						muted
