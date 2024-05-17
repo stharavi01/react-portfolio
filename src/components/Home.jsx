@@ -31,14 +31,22 @@ const Home = () => {
 				<div className="heading-container">
 					<div className="text-[6rem] py-5 lg:text-[18.5rem] font-BebasNeue lg:tracking-[-0.4rem] sm:tracking-normal leading-none flex flex-col">
 						<div>
-							<div id="text1" className="inline-block">
+							<div
+								id="text1"
+								className="inline-block"
+								data-scroll
+								data-scroll-speed="0.1">
 								<span className="text-hover">F</span>
 								<span className="text-hover">R</span>
 								<span className="text-hover">O</span>
 								<span className="text-hover">N</span>
 								<span className="text-hover">T</span>
 							</div>
-							<div id="text2" className="block lg:inline-block">
+							<div
+								id="text2"
+								className="block lg:inline-block"
+								data-scroll
+								data-scroll-speed="0.13">
 								<span className="text-hover">-</span>
 								<span className="text-hover">E</span>
 								<span className="text-hover">N</span>
@@ -47,7 +55,9 @@ const Home = () => {
 						</div>
 						<div
 							id="text3"
-							className="flex flex-row flex-wrap md:flex-row sm:flex-col md:mt-[-2rem] ">
+							className="flex flex-row flex-wrap md:flex-row sm:flex-col md:mt-[-2rem]"
+							data-scroll
+							data-scroll-speed="-0.13">
 							<span className="text-hover">D</span>
 							<span className="text-hover">E</span>
 							<span className="text-hover">V</span>
@@ -65,7 +75,7 @@ const Home = () => {
 						id="aboutText"
 						className="w-[90%] md:w-[50%] lg:w-[18rem] flex-end lg:absolute right-12 bottom-[6rem] md:tracking-[-1.3px]">
 						{/* About content */}
-						<div>
+						<div data-scroll data-scroll-speed="-0.1">
 							<span className="uppercase font-light items-baseline mr-2">
 								About
 							</span>
@@ -74,17 +84,17 @@ const Home = () => {
 								crafting ideas, visuals, and typography into unforgettable
 								digital experiences. With over a year of experience, I bring a
 								unique blend of design and development skills to every project.
-								My main focus is React.js and Next.js but I'm open to learning
-								new things.
+								My main focus is ReactJs and NextJs but I'm open to learning new
+								things.
 							</span>
+							{/* Local time */}
+							<a href="#experience">
+								<div className="mt-10 md:mt-4 flex items-center justify-between">
+									<LocalTime />
+									<BsArrowDown size={20} className="text-hover mt-4" />
+								</div>
+							</a>
 						</div>
-						{/* Local time */}
-						<a href="#experience">
-							<div className="mt-10 md:mt-8 flex items-center justify-between">
-								<LocalTime />
-								<BsArrowDown size={20} className="text-hover mt-4" />
-							</div>
-						</a>
 					</div>
 				</div>
 			</section>

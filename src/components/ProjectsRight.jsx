@@ -44,7 +44,7 @@ const ProjectsRight = ({ project }) => {
 		<div
 			data-scroll
 			data-scroll-speed="0.4"
-			className="w-full h-full md:px-10 flex flex-col justify-center items-center rounded-lg cursor-pointer"
+			className="w-full h-full md:px-10 flex flex-col justify-center items-center  cursor-pointer"
 			onMouseEnter={handleVideoHover}
 			onMouseLeave={handleVideoLeave}>
 			<div
@@ -55,7 +55,7 @@ const ProjectsRight = ({ project }) => {
 				}}>
 				<a href={project.link} target="_blank" className="mt-12">
 					<video
-						className="pointer-events-none rounded-lg "
+						className="pointer-events-none"
 						ref={videoRef}
 						autoPlay
 						muted
