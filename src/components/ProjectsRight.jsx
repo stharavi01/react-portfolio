@@ -48,7 +48,7 @@ const ProjectsRight = ({ project }) => {
 			onMouseEnter={handleVideoHover}
 			onMouseLeave={handleVideoLeave}>
 			<div
-				className="h-full px-6 flex flex-col items-center justify-center rounded-xl"
+				className="h-full px-6 flex flex-col items-center justify-center"
 				style={{
 					backgroundImage: `url(${project.background}) `,
 					backgroundBlendMode: "overlay",

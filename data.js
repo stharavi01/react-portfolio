@@ -134,7 +134,7 @@ export const projectsData = [
         tags: ["React", "Tailwind", "GSAP"],
         videoUrl: Portfolio,
         imageUrl: PortfolioImage,
-        background: Bg4,
+        background: Bg3,
         link: "https://applesite-clone.netlify.app/",
         githubLink: "https://github.com/stharavi01/apple_website"
     },
@@ -146,7 +146,7 @@ export const projectsData = [
         tags: ["Java", "Aseprite", "Tiled Map"],
         videoUrl: GameVideo,
         imageUrl: GameImage,
-        background: Bg3,
+        background: Bg4,
         link: "https://github.com/stharavi01/2D-Platformer-Game",
         githubLink: "https://github.com/stharavi01/2D-Platformer-Game"
     }

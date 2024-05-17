@@ -39,7 +39,7 @@ const Contact = () => {
 
 			{/* Grid container */}
 			<div
-				className="grid-container grid grid-cols-[1fr 1fr] lg:grid-cols-[50%_25%_1fr] gap-6 md:gap-12 md:pt-6 mt-6"
+				className="grid-container grid grid-cols-[1fr 1fr] lg:grid-cols-[50%_25%_1fr] gap-6 md:gap-12 md:py-6 mt-6"
 				data-scroll
 				data-scroll-speed="0.1">
 				{/* Left grid */}
