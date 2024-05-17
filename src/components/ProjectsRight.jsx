@@ -53,7 +53,7 @@ const ProjectsRight = ({ project }) => {
 					backgroundImage: `url(${project.background}) `,
 					backgroundBlendMode: "overlay",
 				}}>
-				<a href={project.link} target="_blank" className="mt-14">
+				<a href={project.link} target="_blank" className="mt-20">
 					<video
 						className="pointer-events-none rounded-lg"
 						ref={videoRef}
@@ -67,7 +67,7 @@ const ProjectsRight = ({ project }) => {
 					</video>
 				</a>
 				<div
-					className="mt-5 md:mt-10 pb-1 flex justify-center"
+					className="mt-5 md:mt-8 pb-1 flex justify-center"
 					style={iconButtonStyle}>
 					{isPlaying ? (
 						<button className="mr-4 icons-hover" onClick={handlePause}>
