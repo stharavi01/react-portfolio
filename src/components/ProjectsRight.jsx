@@ -48,14 +48,14 @@ const ProjectsRight = ({ project }) => {
 			onMouseEnter={handleVideoHover}
 			onMouseLeave={handleVideoLeave}>
 			<div
-				className="h-full px-6 rounded-xl flex flex-col items-center justify-center"
+				className="h-full px-6 flex flex-col items-center justify-center"
 				style={{
 					backgroundImage: `url(${project.background}) `,
 					backgroundBlendMode: "overlay",
 				}}>
-				<a href={project.link} target="_blank" className="mt-12">
+				<a href={project.link} target="_blank" className="mt-14">
 					<video
-						className="pointer-events-none"
+						className="pointer-events-none rounded-lg"
 						ref={videoRef}
 						autoPlay
 						muted
@@ -65,21 +65,23 @@ const ProjectsRight = ({ project }) => {
 						style={{ transform: "scaleY(1.2)" }}>
 						<source src={project.videoUrl} type="video/mp4" />
 					</video>
-					<div className="mt-4 flex justify-center" style={iconButtonStyle}>
-						{isPlaying ? (
-							<button className="mr-4 icons-hover" onClick={handlePause}>
-								<FaCirclePause size={35} />
-							</button>
-						) : (
-							<button className="mr-4 icons-hover" onClick={handlePause}>
-								<FaCirclePlay size={35} />
-							</button>
-						)}
-						<button onClick={handleRestart} className="icons-hover">
-							<VscDebugRestart size={35} />
-						</button>
-					</div>
 				</a>
+				<div
+					className="mt-5 md:mt-10 pb-1 flex justify-center"
+					style={iconButtonStyle}>
+					{isPlaying ? (
+						<button className="mr-4 icons-hover" onClick={handlePause}>
+							<FaCirclePause size={30} />
+						</button>
+					) : (
+						<button className="mr-4 icons-hover" onClick={handlePause}>
+							<FaCirclePlay size={30} />
+						</button>
+					)}
+					<button onClick={handleRestart} className="icons-hover">
+						<VscDebugRestart size={30} />
+					</button>
+				</div>
 			</div>
 		</div>
 	);

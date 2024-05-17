@@ -46,7 +46,7 @@ const Home = () => {
 								id="text2"
 								className="block lg:inline-block"
 								data-scroll
-								data-scroll-speed="0.13">
+								data-scroll-speed="0.1">
 								<span className="text-hover">-</span>
 								<span className="text-hover">E</span>
 								<span className="text-hover">N</span>
@@ -57,7 +57,7 @@ const Home = () => {
 							id="text3"
 							className="flex flex-row flex-wrap md:flex-row sm:flex-col md:mt-[-2rem]"
 							data-scroll
-							data-scroll-speed="-0.13">
+							data-scroll-speed="-0.1">
 							<span className="text-hover">D</span>
 							<span className="text-hover">E</span>
 							<span className="text-hover">V</span>
