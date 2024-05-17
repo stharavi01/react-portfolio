@@ -127,7 +127,7 @@ export const projectsData = [
         githubLink: "https://github.com/stharavi01/apple_website"
     },
     {
-        title: "React Portfolio Website",
+        title: "Portfolio Website",
         number: "04",
         description:
             "I created a stylish portfolio website using React, Tailwind CSS, and GSAP to showcase my projects. With easy navigation, polished design, and smooth animations, visitors can explore my work seamlessly. Every part of the site reflects my dedication to creativity and excellence in web development.",

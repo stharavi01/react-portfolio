@@ -3,7 +3,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const ProjectsLeft = ({ project }) => {
 	return (
 		<div
-			className="md:px-10 mb-16 md:mb-0 font-MontrealBold leading-normal flex flex-col justify-center"
+			className="md:px-10 mb-8 md:mb-0 font-MontrealBold leading-normal flex flex-col justify-center"
 			data-scroll
 			data-scroll-speed="0.1">
 			<p className="text-xl font-normal hidden md:block">

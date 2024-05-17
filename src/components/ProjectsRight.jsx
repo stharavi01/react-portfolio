@@ -44,7 +44,7 @@ const ProjectsRight = ({ project }) => {
 		<div
 			data-scroll
 			data-scroll-speed="0.4"
-			className="w-full h-full md:px-10 flex flex-col justify-center items-center  cursor-pointer"
+			className="w-full h-full mb-14 md:mb-0 md:px-10 flex flex-col justify-center items-center  cursor-pointer"
 			onMouseEnter={handleVideoHover}
 			onMouseLeave={handleVideoLeave}>
 			<div
