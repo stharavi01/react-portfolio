@@ -2,23 +2,23 @@ import React from 'react';
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 // images
-import CosymartImage from "./src/assets/cozymart.png";
-import JobPortalImage from "./src/assets/JobPortal.png";
-import GameImage from "./src/assets/game.png";
-import AppleImage from "./src/assets/appleImage.png";
-import PortfolioImage from "./src/assets/PortfolioImage.png";
+import CosymartImage from "./src/assets/images/cozymart.png";
+import JobPortalImage from "./src/assets/images/JobPortal.png";
+import GameImage from "./src/assets/images/game.png";
+import AppleImage from "./src/assets/images/appleImage.png";
+import PortfolioImage from "./src/assets/images/PortfolioImage.png";
 // videos
-import Cozymart from "./src/assets/Cozymart.mp4";
-import Jobify from "./src/assets/Jobify.mp4";
-import Portfolio from './src/assets/Portfolio.mp4';
-import GameVideo from './src/assets/GameVideo.mp4';
-import Apple from "./src/assets/Apple.mp4";
+import Cozymart from "./src/assets/videos/Cozymart.mp4";
+import Jobify from "./src/assets/videos/Jobify.mp4";
+import Portfolio from './src/assets/videos/Portfolio.mp4';
+import GameVideo from './src/assets/videos/GameVideo.mp4';
+import Apple from "./src/assets/videos/Apple.mp4";
 // background image
-import Bg1 from "./src/assets/bg-1.jpg";
-import Bg2 from './src/assets/bg-2.jpg';
-import Bg3 from './src/assets/bg-3.jpg';
-import Bg4 from './src/assets/bg-4.jpeg';
-import Bg5 from './src/assets/bg-5.jpeg';
+import Bg1 from "./src/assets/images/bg-1.jpg";
+import Bg2 from './src/assets/images/bg-2.jpg';
+import Bg3 from './src/assets/images/bg-3.jpg';
+import Bg4 from './src/assets/images/bg-4.jpeg';
+import Bg5 from './src/assets/images/bg-5.jpeg';
 import { FaGithub, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export const links = [
