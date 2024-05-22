@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, forwardRef } from "react";
+import { gsap } from "gsap";
 
 const LazyVideo = forwardRef(({ src, type, ...props }, ref) => {
 	const videoRef = useRef(null);
@@ -32,6 +33,17 @@ const LazyVideo = forwardRef(({ src, type, ...props }, ref) => {
 			ref.current = videoRef.current;
 		}
 	}, [ref]);
+
+	useEffect(() => {
+		if (isVisible) {
+			gsap.from(videoRef.current, {
+				opacity: 0,
+				scale: 0,
+				duration: 1.4,
+				ease: "power2.inOut",
+			});
+		}
+	}, [isVisible]);
 
 	return (
 		<video ref={videoRef} {...props}>

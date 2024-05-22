@@ -42,7 +42,7 @@ const ProjectsRight = ({ project }) => {
 
 	// Style object for icon buttons
 	const iconButtonStyle = {
-		opacity: isHovered ? 0.7 : 0,
+		opacity: isHovered ? 0.9 : 0,
 		transition: "opacity 0.3s ease",
 	};
 
@@ -51,16 +51,16 @@ const ProjectsRight = ({ project }) => {
 		<div
 			data-scroll
 			data-scroll-speed="0.4"
-			className="w-full h-full mb-14 md:mb-0 md:px-10 flex flex-col justify-center items-center  cursor-pointer"
+			className="w-full h-full mb-14 md:mb-0 md:px-10 flex flex-col justify-center items-center cursor-pointer"
 			onMouseEnter={handleVideoHover}
 			onMouseLeave={handleVideoLeave}>
 			<div
-				className="h-full px-6 flex flex-col items-center justify-center"
+				className="h-full w-full px-6 flex flex-col items-center justify-center"
 				style={{
-					backgroundImage: `url(${project.background}) `,
+					backgroundImage: `url(${project.background})`,
 					backgroundBlendMode: "overlay",
 				}}>
-				<a href={project.link} target="_blank" className="mt-20">
+				<a href={project.link} target="_blank" className="mt-16">
 					{/* Use LazyVideo component instead of video element */}
 					<LazyVideo
 						className="pointer-events-none"

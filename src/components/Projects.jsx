@@ -6,15 +6,15 @@ const About = () => {
 	return (
 		<section
 			id="projects"
-			className="w-full text-darkGray px-5 mt-16 md:mt-28"
+			className="w-full h-full text-darkGray px-5 mt-16 md:mt-28"
 			data-scroll-section>
 			{/* Heading */}
-			<div className="mb-1rem " data-scroll data-scroll-speed="0.2">
+			<div className="mb-1rem " data-scroll data-scroll-speed="0.1">
 				<div className="black-underline"></div>
 				<p className="my-heading-black md:ml-12 ">Selected Projects</p>
 				<div className="black-underline"></div>
 			</div>
-			<div className="sm:px-28">
+			<div className="sm:px-28 md:mt-16">
 				{/* Projects */}
 				{projectsData.map((project, index) => (
 					<div key={index}>
