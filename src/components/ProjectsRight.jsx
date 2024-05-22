@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import LazyVideo from "./LazyVideo";
+import LazyVideo from "../utility/LazyVideo";
 
 const ProjectsRight = ({ project }) => {
 	const videoRef = useRef(null);
