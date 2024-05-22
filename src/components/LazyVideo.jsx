@@ -13,7 +13,7 @@ const LazyVideo = forwardRef(({ src, type, ...props }, ref) => {
 					observer.disconnect();
 				}
 			},
-			{ threshold: 0.1 }
+			{ threshold: 0.5 }
 		);
 
 		if (videoRef.current) {

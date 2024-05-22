@@ -106,8 +106,8 @@ const Contact = () => {
 				</div>
 
 				{/* Bottom right grid */}
-				<div className="mx-auto flex relative">
-					<div className="bg-gray rounded-full md:w-[4.5rem] md:h-[4.5rem] flex justify-center items-center hover:bg-lightWhite transform hover:scale-105 transition-all cursor-pointer">
+				<div className="mx-auto flex relative ">
+					<div className="bg-gray rounded-full md:w-[4.5rem] md:h-[4.5rem] md:flex justify-center items-center hover:bg-lightWhite transform hover:scale-105 transition-all cursor-pointer hidden">
 						<a href="#about">
 							<IoIosArrowRoundUp size={50} className="text-black" />
 						</a>

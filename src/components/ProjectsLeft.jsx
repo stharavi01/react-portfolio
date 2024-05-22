@@ -1,4 +1,6 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const ProjectsLeft = ({ project }) => {
 	return (

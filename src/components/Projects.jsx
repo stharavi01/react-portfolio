@@ -17,7 +17,7 @@ const About = () => {
 			<div className="sm:px-28 md:mt-16">
 				{/* Projects */}
 				{projectsData.map((project, index) => (
-					<div key={index}>
+					<div key={index} className="md:mt-8">
 						{/* for smaller screen */}
 						<div className="flex flex-col md:hidden">
 							<ProjectsLeft key={`left-${index}`} project={project} />
