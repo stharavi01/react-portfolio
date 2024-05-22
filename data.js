@@ -14,9 +14,9 @@ import Jobify from "./src/assets/Jobify.mp4";
 import Portfolio from './src/assets/portfolio.mp4';
 import GameVideo from './src/assets/GameVideo.mp4';
 // background image
-import Bg1 from "./src/assets/bg-1.jpeg";
-import Bg2 from './src/assets/bg-2.jpeg';
-import Bg3 from './src/assets/bg-3.jpeg';
+import Bg1 from "./src/assets/bg-1.jpg";
+import Bg2 from './src/assets/bg-2.jpg';
+import Bg3 from './src/assets/bg-3.jpg';
 import Bg4 from './src/assets/bg-4.jpeg';
 import Bg5 from './src/assets/bg-5.jpeg';
 import { FaGithub, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
@@ -122,7 +122,7 @@ export const projectsData = [
         tags: ["React", "Tailwind", "GSAP", "ThreeJS"],
         videoUrl: Apple,
         imageUrl: AppleImage,
-        background: Bg5,
+        background: Bg3,
         link: "https://applesite-clone.netlify.app/",
         githubLink: "https://github.com/stharavi01/apple_website"
     },
@@ -134,7 +134,7 @@ export const projectsData = [
         tags: ["React", "Tailwind", "GSAP"],
         videoUrl: Portfolio,
         imageUrl: PortfolioImage,
-        background: Bg3,
+        background: Bg4,
         link: "https://applesite-clone.netlify.app/",
         githubLink: "https://github.com/stharavi01/apple_website"
     },
@@ -146,7 +146,7 @@ export const projectsData = [
         tags: ["Java", "Aseprite", "Tiled Map"],
         videoUrl: GameVideo,
         imageUrl: GameImage,
-        background: Bg4,
+        background: Bg5,
         link: "https://github.com/stharavi01/2D-Platformer-Game",
         githubLink: "https://github.com/stharavi01/2D-Platformer-Game"
     }

@@ -2,12 +2,14 @@ import { useState, useRef } from "react";
 import { FaCirclePause } from "react-icons/fa6";
 import { FaCirclePlay } from "react-icons/fa6";
 import { VscDebugRestart } from "react-icons/vsc";
+import LazyVideo from "./LazyVideo";
 
 const ProjectsRight = ({ project }) => {
 	const videoRef = useRef(null);
 	const [isPlaying, setIsPlaying] = useState(true);
 	const [isHovered, setIsHovered] = useState(false);
 
+	// Function to handle pausing and playing the video
 	const handlePause = () => {
 		if (videoRef.current) {
 			if (isPlaying) {
@@ -19,6 +21,7 @@ const ProjectsRight = ({ project }) => {
 		}
 	};
 
+	// Function to handle restarting the video
 	const handleRestart = () => {
 		if (videoRef.current) {
 			videoRef.current.currentTime = 0;
@@ -27,19 +30,23 @@ const ProjectsRight = ({ project }) => {
 		}
 	};
 
+	// Function to handle mouse enter event
 	const handleVideoHover = () => {
 		setIsHovered(true);
 	};
 
+	// Function to handle mouse leave event
 	const handleVideoLeave = () => {
 		setIsHovered(false);
 	};
 
+	// Style object for icon buttons
 	const iconButtonStyle = {
 		opacity: isHovered ? 0.7 : 0,
 		transition: "opacity 0.3s ease",
 	};
 
+	// Render the component
 	return (
 		<div
 			data-scroll
@@ -54,21 +61,23 @@ const ProjectsRight = ({ project }) => {
 					backgroundBlendMode: "overlay",
 				}}>
 				<a href={project.link} target="_blank" className="mt-20">
-					<video
+					{/* Use LazyVideo component instead of video element */}
+					<LazyVideo
 						className="pointer-events-none"
 						ref={videoRef}
 						autoPlay
 						muted
 						loop
 						playsInline
-						key={project.videoUrl}
-						style={{ transform: "scaleY(1.2)" }}>
-						<source src={project.videoUrl} type="video/mp4" />
-					</video>
+						src={project.videoUrl}
+						type="video/mp4"
+						style={{ transform: "scaleY(1.2)" }}
+					/>
 				</a>
 				<div
 					className="mt-5 md:mt-8 pb-1 flex justify-center"
 					style={iconButtonStyle}>
+					{/* Toggle between pause and play button based on isPlaying state */}
 					{isPlaying ? (
 						<button className="mr-4 icons-hover" onClick={handlePause}>
 							<FaCirclePause size={30} />
@@ -78,6 +87,7 @@ const ProjectsRight = ({ project }) => {
 							<FaCirclePlay size={30} />
 						</button>
 					)}
+					{/* Button to restart the video */}
 					<button onClick={handleRestart} className="icons-hover">
 						<VscDebugRestart size={30} />
 					</button>
