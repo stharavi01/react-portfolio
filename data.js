@@ -8,11 +8,6 @@ import GameImage from "./src/assets/game.png";
 import AppleImage from "./src/assets/appleImage.png";
 import PortfolioImage from "./src/assets/PortfolioImage.png";
 // videos
-import Cozymart from "./src/assets/Cozymart.mp4";
-import Jobify from "./src/assets/Jobify.mp4";
-import Portfolio from './src/assets/Portfolio.mp4';
-import GameVideo from './src/assets/Gamevideo.mp4';
-// 
 import Apple from "./src/assets/Apple.mp4";
 import Cozymart from "./src/assets/Cozymart.mp4";
 import Jobify from "./src/assets/Jobify.mp4";
