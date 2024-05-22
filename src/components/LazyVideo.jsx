@@ -1,9 +1,11 @@
-import { useEffect, useRef, useState, forwardRef } from "react";
+import { useEffect, useRef, useState, forwardRef, useMemo } from "react";
 import { gsap } from "gsap";
 
 const LazyVideo = forwardRef(({ src, type, ...props }, ref) => {
 	const videoRef = useRef(null);
 	const [isVisible, setIsVisible] = useState(false);
+
+	const memoizedSource = useMemo(() => ({ src, type }), [src, type]);
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -27,7 +29,6 @@ const LazyVideo = forwardRef(({ src, type, ...props }, ref) => {
 		};
 	}, []);
 
-	// Forward the ref to the video element
 	useEffect(() => {
 		if (ref) {
 			ref.current = videoRef.current;
@@ -46,8 +47,10 @@ const LazyVideo = forwardRef(({ src, type, ...props }, ref) => {
 	}, [isVisible]);
 
 	return (
-		<video ref={videoRef} {...props}>
-			{isVisible && <source src={src} type={type} />}
+		<video ref={videoRef} preload="auto" {...props}>
+			{isVisible && (
+				<source src={memoizedSource.src} type={memoizedSource.type} />
+			)}
 		</video>
 	);
 });

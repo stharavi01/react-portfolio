@@ -1,8 +1,18 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useEffect } from "react";
 
 const ProjectsLeft = ({ project }) => {
+	useEffect(() => {
+		gsap.from(`fade`, {
+			opacity: 0,
+			y: -50,
+			delay: 1,
+			ease: "power1.inOut",
+		});
+	}, []);
+
 	return (
 		<div
 			className="md:px-10 mb-8 md:mb-0 font-MontrealBold leading-normal flex flex-col justify-center"
