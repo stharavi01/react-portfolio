@@ -8,11 +8,11 @@ import GameImage from "./src/assets/game.png";
 import AppleImage from "./src/assets/appleImage.png";
 import PortfolioImage from "./src/assets/PortfolioImage.png";
 // videos
-import Apple from "./src/assets/apple.mp4";
+import Apple from "./src/assets/Apple.mp4";
 import Cozymart from "./src/assets/Cozymart.mp4";
 import Jobify from "./src/assets/Jobify.mp4";
-import Portfolio from './src/assets/portfolio.mp4';
-import GameVideo from './src/assets/GameVideo.mp4';
+import Portfolio from './src/assets/Portfolio.mp4';
+import GameVideo from './src/assets/Gamevideo.mp4';
 // background image
 import Bg1 from "./src/assets/bg-1.jpg";
 import Bg2 from './src/assets/bg-2.jpg';

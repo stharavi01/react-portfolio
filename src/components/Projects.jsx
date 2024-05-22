@@ -14,7 +14,7 @@ const About = () => {
 				<p className="my-heading-black md:ml-12 ">Selected Projects</p>
 				<div className="black-underline"></div>
 			</div>
-			<div className="sm:px-28 md:mt-16">
+			<div className="sm:px-28 md:mt-20">
 				{/* Projects */}
 				{projectsData.map((project, index) => (
 					<div key={index} className="md:mt-8">

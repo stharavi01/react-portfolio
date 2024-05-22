@@ -40,13 +40,6 @@ const ProjectsRight = ({ project }) => {
 		setIsHovered(false);
 	};
 
-	// Style object for icon buttons
-	const iconButtonStyle = {
-		opacity: isHovered ? 0.9 : 0,
-		transition: "opacity 0.3s ease",
-	};
-
-	// Render the component
 	return (
 		<div
 			data-scroll
@@ -74,9 +67,7 @@ const ProjectsRight = ({ project }) => {
 						style={{ transform: "scaleY(1.2)" }}
 					/>
 				</a>
-				<div
-					className="mt-5 md:mt-8 pb-1 flex justify-center"
-					style={iconButtonStyle}>
+				<div className="mt-5 md:mt-8 pb-1 flex justify-center">
 					{/* Toggle between pause and play button based on isPlaying state */}
 					{isPlaying ? (
 						<button className="mr-4 icons-hover" onClick={handlePause}>

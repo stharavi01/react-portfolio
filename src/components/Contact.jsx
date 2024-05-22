@@ -6,12 +6,12 @@ const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className=" w-full relative pb-6 px-5 lg:px-16 text-darkGray mt-24">
+			className=" w-full relative pb-6 px-5 lg:px-16 text-darkGray mt-12 md:mt-24">
 			<div className="heading-container ">
 				{/* mail */}
 				<div>
 					<p
-						className="text-center text-sm my-[4px] font-OpenSauce-Light tracking-tighter font-bold text-darkGray"
+						className="text-center text-sm my-[8px] font-OpenSauce-Light tracking-tighter font-bold text-darkGray"
 						data-scroll
 						data-scroll-speed="0.08">
 						Have an offer? Drop me an email :
@@ -20,7 +20,7 @@ const Contact = () => {
 						href="mailto:shrestharavi06@gmail.com"
 						className="cursor-pointer hover:text-red-400 relative z-30 text-center">
 						<p
-							className="text-center text-2xl mb-[-8px] font-OverusedGrotesk-Bold tracking-tight font-bold text-darkGray"
+							className="text-center text-2xl mb-[-8px] font-OverusedGrotesk-Bold  font-bold text-darkGray"
 							data-scroll
 							data-scroll-speed="0.1">
 							shrestharavi06@gmail.com
@@ -95,7 +95,7 @@ const Contact = () => {
 				</div>
 
 				{/* Bottom Left grid*/}
-				<div className="text-[1.5rem] font-OverusedGrotesk-Bold text-darkGray opacity-80 leading-tight flex flex-col text-left uppercase ">
+				<div className="text-base md:text-[1.5rem] font-OverusedGrotesk-Bold text-darkGray opacity-80 leading-tight flex flex-col text-left uppercase ">
 					<p> &copy; {new Date().getFullYear()}</p>
 					<p>Ravi Shrestha</p>
 				</div>

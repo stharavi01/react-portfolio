@@ -75,8 +75,33 @@ html {
 	scroll-behavior: smooth;
 }
 
-body {
-	overflow-x: hiden;
+/* locomotive scroll */
+
+html.lenis {
+	height: auto;
+}
+.lenis.lenis-smooth {
+	scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+	overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+	pointer-events: none;
+}
+
+/* Only necessary with horizontal scrolling */
+html[data-scroll-orientation="horizontal"] {
+	body {
+		width: fit-content;
+	}
+	[data-scroll-container] {
+		display: flex;
+	}
 }
 
 .text-hover {
@@ -101,32 +126,4 @@ body {
 
 .icons-hover:hover {
 	@apply transform scale-110 transition;
-}
-
-/* locomotive scroll */
-
-html.lenis {
-	height: auto;
-}
-.lenis.lenis-smooth {
-	scroll-behavior: auto;
-}
-.lenis.lenis-smooth [data-lenis-prevent] {
-	overscroll-behavior: contain;
-}
-.lenis.lenis-stopped {
-	overflow: hidden;
-}
-.lenis.lenis-scrolling iframe {
-	pointer-events: none;
-}
-
-/* Only necessary with horizontal scrolling */
-html[data-scroll-orientation="horizontal"] {
-	body {
-		width: fit-content;
-	}
-	[data-scroll-container] {
-		display: flex;
-	}
 }
