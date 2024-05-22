@@ -12,7 +12,12 @@ import Cozymart from "./src/assets/Cozymart.mp4";
 import Jobify from "./src/assets/Jobify.mp4";
 import Portfolio from './src/assets/Portfolio.mp4';
 import GameVideo from './src/assets/Gamevideo.mp4';
+// 
 import Apple from "./src/assets/Apple.mp4";
+import Cozymart from "./src/assets/Cozymart.mp4";
+import Jobify from "./src/assets/Jobify.mp4";
+import Portfolio from "./src/assets/Portfolio.mp4";
+import GameVideo from "./src/assets/Gamevideo";
 // background image
 import Bg1 from "./src/assets/bg-1.jpg";
 import Bg2 from './src/assets/bg-2.jpg';
