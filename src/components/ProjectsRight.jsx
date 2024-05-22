@@ -1,63 +1,63 @@
-import { useState, useRef } from "react";
-import { FaCirclePause } from "react-icons/fa6";
-import { FaCirclePlay } from "react-icons/fa6";
+import React, { useState, useRef, useEffect } from "react";
+import { FaCirclePause, FaCirclePlay } from "react-icons/fa6";
 import { VscDebugRestart } from "react-icons/vsc";
 import LazyVideo from "./LazyVideo";
 
 const ProjectsRight = ({ project }) => {
 	const videoRef = useRef(null);
-	const [isPlaying, setIsPlaying] = useState(true);
 	const [isHovered, setIsHovered] = useState(false);
+	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+	const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
 
-	// Function to handle pausing and playing the video
-	const handlePause = () => {
-		if (videoRef.current) {
-			if (isPlaying) {
-				videoRef.current.pause();
-			} else {
-				videoRef.current.play();
-			}
-			setIsPlaying(!isPlaying);
-		}
+	const handleMouseMove = (event) => {
+		const rect = videoRef.current.getBoundingClientRect();
+		const newX = event.clientX - rect.left;
+		const newY = event.clientY - rect.top;
+
+		// Smoothly update mouse position
+		setMousePosition((prevPosition) => ({
+			x: prevPosition.x + (newX - prevPosition.x) * 0.08,
+			y: prevPosition.y + (newY - prevPosition.y) * 0.08,
+		}));
 	};
 
-	// Function to handle restarting the video
-	const handleRestart = () => {
-		if (videoRef.current) {
-			videoRef.current.currentTime = 0;
-			videoRef.current.play();
-			setIsPlaying(true);
-		}
-	};
+	useEffect(() => {
+		const handleResize = () => {
+			const { width, height } = videoRef.current.getBoundingClientRect();
+			setContainerSize({ width, height });
+		};
 
-	// Function to handle mouse enter event
-	const handleVideoHover = () => {
-		setIsHovered(true);
-	};
+		// Initial size calculation
+		handleResize();
 
-	// Function to handle mouse leave event
-	const handleVideoLeave = () => {
-		setIsHovered(false);
-	};
+		// Event listener for resizing
+		window.addEventListener("resize", handleResize);
+
+		// Cleanup on unmount
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 
 	return (
 		<div
 			data-scroll
 			data-scroll-speed="0.4"
-			className="w-full h-full mb-14 md:mb-0 md:px-10 flex flex-col justify-center items-center cursor-pointer"
-			onMouseEnter={handleVideoHover}
-			onMouseLeave={handleVideoLeave}>
+			className="w-full h-full mb-14 md:mb-0 md:px-10 flex flex-col justify-center items-center cursor-pointer relative"
+			onMouseEnter={() => setIsHovered(true)}
+			onMouseLeave={() => setIsHovered(false)}
+			onMouseMove={handleMouseMove}>
 			<div
 				className="h-full w-full px-6 flex flex-col items-center justify-center"
 				style={{
 					backgroundImage: `url(${project.background})`,
 					backgroundBlendMode: "overlay",
-				}}>
-				<a href={project.link} target="_blank" className="mt-16">
-					{/* Use LazyVideo component instead of video element */}
+					position: "relative",
+				}}
+				ref={videoRef}>
+				<a href={project.link} target="_blank">
 					<LazyVideo
 						className="pointer-events-none"
-						ref={videoRef}
 						autoPlay
 						muted
 						loop
@@ -67,22 +67,21 @@ const ProjectsRight = ({ project }) => {
 						style={{ transform: "scaleY(1.2)" }}
 					/>
 				</a>
-				<div className="mt-5 md:mt-8 pb-1 flex justify-center">
-					{/* Toggle between pause and play button based on isPlaying state */}
-					{isPlaying ? (
-						<button className="mr-4 icons-hover" onClick={handlePause}>
-							<FaCirclePause size={30} />
-						</button>
-					) : (
-						<button className="mr-4 icons-hover" onClick={handlePause}>
-							<FaCirclePlay size={30} />
-						</button>
-					)}
-					{/* Button to restart the video */}
-					<button onClick={handleRestart} className="icons-hover">
-						<VscDebugRestart size={30} />
-					</button>
-				</div>
+
+				{isHovered && (
+					<div
+						className="absolute z-50 flex items-center justify-center bg-black text-softGray rounded-full pointer-events-none"
+						style={{
+							width: "100px",
+							height: "100px",
+							left: `${mousePosition.x - 40}px`,
+							top: `${mousePosition.y - 50}px`,
+							padding: "8px",
+							opacity: 0.8,
+						}}>
+						<span>View Site</span>
+					</div>
+				)}
 			</div>
 		</div>
 	);

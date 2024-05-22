@@ -6,7 +6,7 @@ const About = () => {
 	return (
 		<section
 			id="projects"
-			className="w-full h-full text-darkGray px-5 mt-16 md:mt-28"
+			className="w-full h-full text-darkGray px-5 mt-16 md:my-24"
 			data-scroll-section>
 			{/* Heading */}
 			<div className="mb-1rem " data-scroll data-scroll-speed="0.1">
