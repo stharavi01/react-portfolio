@@ -1,10 +1,23 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { links, socials } from "../../data";
 import gsap from "gsap";
 
 const SideNavbar = () => {
 	const navRefs = links.map(() => useRef(null));
 	const [isOpen, setIsOpen] = useState(false);
+	const [prevScrollPos, setPrevScrollPos] = useState(0);
+	const [visible, setVisible] = useState(true);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const currentScrollPos = window.scrollY;
+			setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 50);
+			setPrevScrollPos(currentScrollPos);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, [prevScrollPos]);
 
 	const toggleMenu = () => {
 		setIsOpen(!isOpen);
@@ -29,9 +42,11 @@ const SideNavbar = () => {
 	};
 
 	return (
-		<div className="relative h-full">
-			{/* Circle background for the hamburger button */}
-			<div className="bg-darkWhite w-[3.5rem] h-[3.5rem] fixed top-3 lg:top-4 left-4 z-50 rounded-full flex items-center justify-center">
+		<>
+			<div
+				className={`bg-darkWhite w-[3.5rem] h-[3.5rem] fixed top-3 lg:top-4 left-4 z-50 rounded-full flex items-center justify-center transition-all ${
+					!visible ? "transform scale-0" : "transform scale-100"
+				}`}>
 				{/* Hamburger menu button */}
 				<button
 					className="focus:outline-none w-full h-full flex items-center justify-center"
@@ -77,7 +92,7 @@ const SideNavbar = () => {
 							</a>
 						</li>
 					))}
-					<div className="flex mt-12 gap-6 ">
+					<div className="flex mt-12 gap-6">
 						{socials.map((social) => (
 							<a
 								onClick={toggleMenu}
@@ -92,7 +107,7 @@ const SideNavbar = () => {
 					</div>
 				</ul>
 			</div>
-		</div>
+		</>
 	);
 };
 
