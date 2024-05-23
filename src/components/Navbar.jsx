@@ -1,6 +1,5 @@
 import { GoDownload } from "react-icons/go";
-import Resume from "../assets/resume.pdf";
-import { TbEqual } from "react-icons/tb";
+import Resume from "../assets/rabinShrestha_resume.pdf";
 import SideNavbar from "./SideNavbar";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -21,6 +20,10 @@ const Navbar = () => {
 		});
 	}, []);
 
+	const handleReload = () => {
+		window.location.reload();
+	};
+
 	return (
 		<>
 			<header
@@ -30,6 +33,7 @@ const Navbar = () => {
 				<div>
 					<p
 						id="my-name"
+						onClick={handleReload}
 						className="ml-16 uppercase cursor-pointer text-darkWhite text-hover ">
 						<span>Rabin</span> <span className="block"> Shrestha</span>
 					</p>
@@ -49,7 +53,7 @@ const Navbar = () => {
 					</p>
 
 					<div className="justify-end">
-						<a href={Resume} download="downloaded-resume.pdf">
+						<a href={Resume} download="rabinShrestha_resume.pdf">
 							<button className="px-4 py-2 lg:mt-[-0.4rem] text-sm rounded-full border hover:text-slate-50 flex items-center gap-1 cursor-pointer text-hover">
 								Resume <GoDownload />
 							</button>

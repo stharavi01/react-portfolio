@@ -14,7 +14,6 @@ const App = () => {
 		const scroll = new LocomotiveScroll({
 			el: scrollRef.current,
 			smooth: true,
-			multiplier: 9,
 		});
 
 		return () => {

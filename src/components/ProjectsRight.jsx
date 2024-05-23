@@ -41,12 +41,12 @@ const ProjectsRight = ({ project }) => {
 		<div
 			data-scroll
 			data-scroll-speed="0.4"
-			className="h-[16rem] md:h-[28rem] mb-14 md:mb-0 md:px-10 flex flex-col justify-center items-center cursor-pointer relative"
+			className="h-[16rem] md:h-[28rem] w-full mb-14 md:mb-0 md:px-10 flex flex-col justify-center items-center cursor-pointer relative"
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
 			onMouseMove={handleMouseMove}>
 			<div
-				className="h-full px-6 flex flex-col items-center justify-center"
+				className="h-full w-full px-6 flex flex-col items-center justify-center"
 				style={{
 					backgroundImage: `url(${project.background})`,
 					backgroundBlendMode: "overlay",

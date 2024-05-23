@@ -29,7 +29,7 @@ const Home = () => {
 				className="h-[95vh] md:h-screen w-full relative px-5 md:px-10 bg-black text-darkWhite"
 				data-scroll-section>
 				<div className="heading-container">
-					<div className="text-[6rem] py-5 lg:text-[18.5rem] font-BebasNeue lg:tracking-[-0.4rem] sm:tracking-normal leading-none flex flex-col">
+					<div className="text-[6rem] pt-5 lg:text-[18.5rem] font-BebasNeue lg:tracking-[-0.4rem] sm:tracking-normal leading-none flex flex-col">
 						<div>
 							<div
 								id="text1"
@@ -84,8 +84,7 @@ const Home = () => {
 								crafting ideas, visuals, and typography into unforgettable
 								digital experiences. With over a year of experience, I bring a
 								unique blend of design and development skills to every project.
-								My main focus is ReactJs and NextJs but I'm open to learning new
-								things.
+								My main focus is ReactJs and NextJs.
 							</span>
 							{/* Local time */}
 							<a href="#experience">

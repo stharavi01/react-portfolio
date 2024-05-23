@@ -135,8 +135,8 @@ export const projectsData = [
         videoUrl: Portfolio,
         imageUrl: PortfolioImage,
         background: Bg4,
-        link: "https://applesite-clone.netlify.app/",
-        githubLink: "https://github.com/stharavi01/apple_website"
+        link: "https://stharavi.netlify.app/",
+        githubLink: "rabinShrestha_resume"
     },
     {
         title: "Far From Home",
