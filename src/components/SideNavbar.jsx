@@ -25,7 +25,7 @@ const SideNavbar = () => {
 
 	// Event handler for mouse enter
 	const handleMouseEnter = (ref) => {
-		gsap.to(ref.current, {
+		gsap.o(ref.current, {
 			x: 25,
 			duration: 0.2,
 			ease: "power1.inOut",
