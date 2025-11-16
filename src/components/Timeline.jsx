@@ -19,6 +19,7 @@ const Timeline = () => {
 						iconStyle={{
 							background: "#202020",
 							color: "#f3f4f6",
+							boxShadow: "0 0 0 4px #aaa, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)",
 						}}
 						icon={
 							experience.type === "work" ? <FaBriefcase /> : <FaGraduationCap />
@@ -26,23 +27,30 @@ const Timeline = () => {
 						contentStyle={{
 							background: "#202020",
 							color: "#f3f4f6",
+							boxShadow: "0 3px 0 #aaa",
+							borderTop: "3px solid #aaa",
 						}}
 						contentArrowStyle={{
-							borderLeft: "7px solid #202020", // Adjust the border to point left
+							borderRight: index % 2 === 0 ? "7px solid #202020" : "none",
+							borderLeft: index % 2 !== 0 ? "7px solid #202020" : "none",
 						}}
-						position="right" // Aligns all elements to the right
+						position={index % 2 === 0 ? "left" : "right"} // Alternates between left and right
 					>
-						<h3 className="font-normal mb-1">{experience.title}</h3>
-						<p className="font-normal text-base text-lightWhite">
+						<h3 className="font-semibold text-xl mb-2">{experience.title}</h3>
+						<p className="font-normal text-base text-gray-400 mb-2">
 							{experience.location}
 						</p>
-						<p className="font-normal text-sm text-lightWhite">
+						<p className="font-normal text-sm text-gray-300 leading-relaxed">
 							{experience.description}
 						</p>
 					</VerticalTimelineElement>
 				))}
 				<VerticalTimelineElement
-					iconStyle={{ background: "#202020", color: "#f3f4f6" }}
+					iconStyle={{ 
+						background: "#202020", 
+						color: "#f3f4f6",
+						boxShadow: "0 0 0 4px #aaa, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)",
+					}}
 					icon={<RiReactjsLine />}
 				/>
 			</VerticalTimeline>

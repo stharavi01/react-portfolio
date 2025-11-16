@@ -45,11 +45,11 @@ const Navbar = () => {
 					id="my-nav"
 					className="flex flex-col md:flex-row gap-y-4 items-end md:justify-between">
 					<p className=" uppercase sm:flex text-hover md:w-[30%] hidden ">
-						Front end developer folio / 2023 - 2024
+						Front end developer folio / 2023 - 2025
 					</p>
 
 					<p className=" items-center text-hover text-wrap md:w-1/4 hidden sm:block">
-						Open for offers & internships -
+						Open for offers-
 					</p>
 
 					<div className="justify-end">

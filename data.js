@@ -7,12 +7,16 @@ import JobPortalImage from "./src/assets/images/JobPortal.png";
 import GameImage from "./src/assets/images/game.png";
 import AppleImage from "./src/assets/images/appleImage.png";
 import PortfolioImage from "./src/assets/images/PortfolioImage.png";
+import GitfolioImage from "./src/assets/images/PortfolioImage.png";
+
 // videos
 import Cozymart from "./src/assets/videos/Cozymart.mp4";
 import Jobify from "./src/assets/videos/Jobify.mp4";
 import Portfolio from './src/assets/videos/Portfolio.mp4';
 import GameVideo from './src/assets/videos/GameVideo.mp4';
 import Apple from "./src/assets/videos/Apple.mp4";
+import GitfolioVideo from "./src/assets/videos/Apple.mp4";
+
 // background image
 import Bg1 from "./src/assets/images/bg-1.jpg";
 import Bg2 from './src/assets/images/bg-2.jpg';
@@ -69,30 +73,53 @@ export const socials = [
 
 export const experiencesData = [
     {
-        title: "Pursuing BSc. CSIT",
-        location: "Gongabu, Kathmandu",
+        title: "Mid-Level Frontend Developer (Medex)",
+        location: "Bangkok, Thailand",
         description:
-            "Pursuing my bachelors degree in computer science and information technology (BSc. CSIT) at Asian School of Management & Technology.",
-        icon: React.createElement(LuGraduationCap),
-        date: "Sep 2019 - Present",
-        type: "study"
+            "Developed core modules for medex.co (Teleconsultation, Lab Tests, Wellness, Promotions) using React, Next.js, and TypeScript. Led the Provider Panel and internal Clinic Management System for multi-branch operations including scheduling, patient reports, WhatsApp automation, and administrative workflows. Integrated NestJS APIs, payment gateways, analytics dashboards (Recharts), and delivered responsive, pixel-perfect UIs with Tailwind, Sass, and MUI.",
+        icon: React.createElement(CgWorkAlt),
+        date: "June 2024 - Present",
+        type: "work"
     },
     {
-        title: "ReactJs Intern ( Corpola Tech )",
+        title: "ReactJs Intern (Corpola Tech)",
         location: "Sankhamul, Kathmandu",
         description:
-            "Worked as a ReactJs intern where I worked in the development of a cutting-edge educational platform using diverse arrays of technologies like React, Javascript, CSS, Semantic UI and more.",
+            "Worked as a ReactJs intern developing key modules of an educational platform using React, JavaScript, CSS, Semantic UI, and other technologies.",
         icon: React.createElement(CgWorkAlt),
         date: "Jan 2024 - April 2024",
         type: "work"
     },
-
+    {
+        title: "Pursuing BSc. CSIT",
+        location: "Gongabu, Kathmandu",
+        description:
+            "Pursuing my bachelor's degree in Computer Science and Information Technology (BSc. CSIT) at Asian School of Management & Technology.",
+        icon: React.createElement(LuGraduationCap),
+        date: "Sep 2019 - Present",
+        type: "study"
+    }
 ];
 
+
 export const projectsData = [
+{
+    title: "Gitfolio",
+    number: "01",
+    description:
+    "Gitfolio is a full-stack project that helps developers generate professional portfolio websites from GitHub profiles. It includes GitHub/Google OAuth, AI-powered content enhancement (projects, experience, skills, bio), and a drag-and-drop portfolio builder. Users can sync repositories, customize project descriptions, visualize GitHub analytics, and deploy static portfolio pages—removing the need to manually create portfolio content.",
+    tags: ["Next.js 15", "React 19", "TypeScript", "Zustand", "React Query", "NestJS", "Prisma", "PostgreSQL", "Groq AI", "Redis"],
+    videoUrl: GitfolioVideo,
+    imageUrl: GitfolioImage,
+    background: Bg2,
+    link: "https://gitfolio-frontend.vercel.app/",
+    githubLink: "https://gitfolio-api-1-o43w.onrender.com/api/docs",
+    frontendGithub: "https://github.com/stharavi01/gitfolio-frontend",
+    backendGithub: "https://github.com/stharavi01/gitfolio-api"
+},
     {
         title: "CosyMart",
-        number: "01",
+        number: "02",
         description:
             "Cozymart is an online furniture store that offers customers a seamless shopping experience. The website showcases a wide selection of products with detailed visuals, allowing users to explore different colors and styles. Customers can authenticate their accounts, manage their carts, and easily complete purchases through a smooth checkout process.",
         tags: ["React", "Redux", "Tailwind", "DaisyUI",],
@@ -104,7 +131,7 @@ export const projectsData = [
     },
     {
         title: "JobPortal Website",
-        number: "02",
+        number: "03",
         description:
             "Jobster is a platform that helps users manage and track their job applications across different positions. Users can monitor the status of applications (pending, rejected, or interview) and set up profiles with ease. The platform helps users to understand their application history and performance to streamlines the job search process,",
         tags: ["React", "DaisyUI", "Tailwind", "Redux"],
@@ -116,7 +143,7 @@ export const projectsData = [
     },
     {
         title: "Apple Website",
-        number: "03",
+        number: "04",
         description:
             "The iPhone 15 Pro website clone is a project built to learn advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS for modern, visually appealing design.",
         tags: ["React", "Tailwind", "GSAP", "ThreeJS"],
@@ -128,7 +155,7 @@ export const projectsData = [
     },
     {
         title: "Portfolio Website",
-        number: "04",
+        number: "05",
         description:
             "I created a stylish portfolio website using React, Tailwind CSS, and GSAP to showcase my projects. With easy navigation, polished design, and smooth animations, visitors can explore my work seamlessly. Every part of the site reflects my dedication to creativity and excellence in web development.",
         tags: ["React", "Tailwind", "GSAP"],
@@ -140,7 +167,7 @@ export const projectsData = [
     },
     {
         title: "Far From Home",
-        number: "05",
+        number: "06",
         description:
             "Far From Home is a 2D platformer game developed using Java as a final year project for the BSc. CSIT curriculum. In this game the players control a character navigating levels filled with enemies and obstacles, aiming to reach the end point to progress to more challenging stages. ",
         tags: ["Java", "Aseprite", "Tiled Map"],
@@ -154,20 +181,34 @@ export const projectsData = [
 ];
 
 export const skillsData = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Git",
-    "Tailwind",
-    "Semantic UI",
+    "HTML5",
+    "CSS3",
     "Sass",
-    "Prisma",
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "Redux Toolkit",
+    "Zustand",
+    "React Query",
+    "Node.js",
+    "Express.js",
+    "NestJS",
     "MongoDB",
-    "SQL",
-    "Redux",
-    "Express",
+    "PostgreSQL",
+    "Prisma ORM",
+    "Tailwind CSS",
+    "Material UI",
+    "Ant Design",
+    "Bootstrap",
+    "Semantic UI",
+    "ShadCn UI",
     "GSAP",
+    "Framer Motion",
+    "Git",
+    "GitHub",
+    "GitLab",
+    "Webpack",
+    "Babel",
+    "Postman",
 ];
