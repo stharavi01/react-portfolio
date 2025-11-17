@@ -7,7 +7,7 @@ import JobPortalImage from "./src/assets/images/JobPortal.png";
 import GameImage from "./src/assets/images/game.png";
 import AppleImage from "./src/assets/images/appleImage.png";
 import PortfolioImage from "./src/assets/images/PortfolioImage.png";
-import GitfolioImage from "./src/assets/images/PortfolioImage.png";
+import GitfolioImage from "./src/assets/images/gitfolio.png";
 
 // videos
 import Cozymart from "./src/assets/videos/Cozymart.mp4";
