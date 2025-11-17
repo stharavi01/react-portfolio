@@ -62,15 +62,19 @@
 }
 
 body {
-  /* color: white; */
-  width: 100dvw;
+  width: 100%;
   overflow-x: hidden;
   height: 100%;
   background: #e1e1e1;
   border-color: #3b3b3b;
   user-select: none;
-  max-width: 1440px;
-  margin: 0 auto;
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 html {

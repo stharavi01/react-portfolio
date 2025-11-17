@@ -44,12 +44,12 @@ const SideNavbar = () => {
 	return (
 		<>
 			<div
-				className={`bg-darkWhite w-[3.5rem] h-[3.5rem] fixed top-3 lg:top-4 left-4 z-50 rounded-full flex items-center justify-center transition-all ${
+				className={`max-w-[1440px] bg-darkWhite w-[3.5rem] h-[3.5rem] fixed top-3 lg:top-4 left-4 z-50 rounded-full flex items-center justify-center transition-all ${
 					!visible ? "transform scale-0" : "transform scale-100"
 				}`}>
 				{/* Hamburger menu button */}
 				<button
-					className="focus:outline-none w-full h-full flex items-center justify-center"
+					className="focus:outline-none w-full  h-full flex items-center justify-center"
 					onClick={toggleMenu}>
 					{/* Hamburger menu icon div */}
 					<div className="w-6 h-6 relative top-1">

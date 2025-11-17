@@ -28,8 +28,9 @@ const Navbar = () => {
 		<>
 			<header
 				id="about"
-				className="font-semibold md:text-sm leading-tight text-darkWhite bg-black w-full grid grid-cols-[20%_1fr] lg:grid-cols-2 gap-20 md:gap-50 px-6 lg:px-14 py-5 sm:px-10 border-b border-white border-opacity-30 lg:border-none">
+				className="font-semibold md:text-sm leading-tight text-darkWhite bg-black w-full ">
 				{/* Left column */}
+				<div className="max-w-[1440px] mx-auto grid grid-cols-[20%_1fr] lg:grid-cols-2 gap-20 md:gap-50 px-6 lg:px-14 py-5 sm:px-10 border-b border-white border-opacity-30 lg:border-none relative">
 				<div>
 					<p
 						id="my-name"
@@ -59,6 +60,7 @@ const Navbar = () => {
 							</button>
 						</a>
 					</div>
+				</div>
 				</div>
 			</header>
 		</>

@@ -15,7 +15,6 @@ import Jobify from "./src/assets/videos/Jobify.mp4";
 import Portfolio from './src/assets/videos/Portfolio.mp4';
 import GameVideo from './src/assets/videos/GameVideo.mp4';
 import Apple from "./src/assets/videos/Apple.mp4";
-import GitfolioVideo from "./src/assets/videos/Apple.mp4";
 
 // background image
 import Bg1 from "./src/assets/images/bg-1.jpg";
@@ -109,7 +108,6 @@ export const projectsData = [
     description:
     "Gitfolio is a full-stack project that helps developers generate professional portfolio websites from GitHub profiles. It includes GitHub/Google OAuth, AI-powered content enhancement (projects, experience, skills, bio), and a drag-and-drop portfolio builder. Users can sync repositories, customize project descriptions, visualize GitHub analytics, and deploy static portfolio pages—removing the need to manually create portfolio content.",
     tags: ["Next.js 15", "React 19", "TypeScript", "Zustand", "React Query", "NestJS", "Prisma", "PostgreSQL", "Groq AI", "Redis"],
-    videoUrl: GitfolioVideo,
     imageUrl: GitfolioImage,
     background: Bg2,
     link: "https://gitfolio-frontend.vercel.app/",

@@ -21,8 +21,10 @@ const ProjectsRight = ({ project }) => {
 
 	useEffect(() => {
 		const handleResize = () => {
-			const { width, height } = videoRef.current.getBoundingClientRect();
-			setContainerSize({ width, height });
+			if (videoRef.current) {
+				const { width, height } = videoRef.current.getBoundingClientRect();
+				setContainerSize({ width, height });
+			}
 		};
 
 		// Initial size calculation
@@ -54,31 +56,39 @@ const ProjectsRight = ({ project }) => {
 					overflow: "hidden",
 				}}
 				ref={videoRef}>
-				<a href={project.link} target="_blank">
-					<LazyVideo
-						className="pointer-events-none"
-						autoPlay
-						muted
-						loop
-						playsInline
-						src={project.videoUrl}
-						type="video/mp4"
-						style={{ transform: "scaleY(1.2)" }}
-					/>
+				<a href={project.link} target="_blank" rel="noopener noreferrer" className="h-full w-full flex items-center justify-center">
+					{project.videoUrl ? (
+						<LazyVideo
+							className="pointer-events-none"
+							autoPlay
+							muted
+							loop
+							playsInline
+							src={project.videoUrl}
+							type="video/mp4"
+							style={{ transform: "scaleY(1.2)" }}
+						/>
+					) : project.imageUrl ? (
+						<img
+							src={project.imageUrl}
+							alt={project.title || "Project preview"}
+							className="pointer-events-none w-full h-full object-contain"
+						/>
+					) : null}
 				</a>
 
 				{isHovered && (
 					<div
-						className="absolute z-50 flex items-center justify-center bg-black text-softGray rounded-full pointer-events-none"
+						className="absolute z-50 flex items-center justify-center bg-black text-softGray rounded-full pointer-events-none transition-opacity duration-300"
 						style={{
 							width: "100px",
 							height: "100px",
-							left: `${mousePosition.x - 40}px`,
+							left: `${mousePosition.x - 50}px`,
 							top: `${mousePosition.y - 50}px`,
 							padding: "8px",
 							opacity: 0.8,
 						}}>
-						<span>View Site</span>
+						<span className="text-sm font-semibold text-center">View Site</span>
 					</div>
 				)}
 			</div>
